@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Irish Grover", system-ui;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --background-color: #618264;
+  --primary-color: #27fb27;
+  --secondary-color: #b89130;
+  --highlight-color: #00ff00;
+  --opaque-bg: rgba(255, 255, 255, 0.9);
+  --redish: #f93f3f;
+  --black: #000;
+  --white: #fff;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
