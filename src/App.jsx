@@ -1,6 +1,6 @@
 import QuizHome from "./pages/QuizHome";
 import QuizPage from "./pages/QuizPage";
-import Landing from "./pages/landing";
+import Landing from "./pages/Landing";
 import CompleteQuiz from "./pages/CompleteQuiz";
 import LeaderBoard from "./pages/LeaderBoard";
 //import SplashScreen from "./components/SplashScreen";
