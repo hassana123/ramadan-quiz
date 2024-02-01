@@ -14,8 +14,8 @@ const TopFive = () => {
         // Query to get the leaderboard data, ordered by score in descending order
         const leaderboardQuery = query(
           leaderboardCollectionRef,
-          orderBy("score", "desc")
-          // orderBy("timestamp", "desc")
+          orderBy("score", "desc"),
+          orderBy("timestamp", "desc")
         );
 
         // Execute the query and get the snapshot
@@ -26,7 +26,7 @@ const TopFive = () => {
 
         // Update the state with the fetched data
         setLeaderboardData(data);
-        console.log(data);
+        //console.log(data);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching leaderboard data:", error);

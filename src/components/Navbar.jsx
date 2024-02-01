@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import moon from "../assets/moon.svg";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="flex justify-around font-600 py-1 shadow-md border-b border-b-[2px]  bg-mainbg">
       <div className=" ">
@@ -27,11 +33,39 @@ const Navbar = () => {
           Play Quiz
         </NavLink>
       </div>
-      <div className="md:hidden cursor-pointer mt-2">
-        <div className="w-8 h-[2px] bg-whiteish mb-1"></div>
-        <div className="w-7 h-[2px] bg-whiteish mb-1"></div>
-        <div className="w-6 h-[2px] bg-whiteish"></div>
+      <div
+        className="md:hidden  cursor-pointer z-10  mt-[15px]"
+        onClick={toggleMenu}
+      >
+        <div className="w-8 h-[2px] bg-secondary mb-1"></div>
+        <div className="w-7 h-[2px] bg-secondary mb-1"></div>
+        <div className="w-6 h-[2px] bg-secondary"></div>
       </div>
+      {isMenuOpen && (
+        <div className="md:hidden bg-whiteish absolute top-[-1%] w-[60%] right-[0%] text-secondary text-center mt-2 ">
+          <NavLink
+            className="block py-2 hover:bg-secondary hover:text-blacka mt-20"
+            to="/leaderboard"
+            onClick={toggleMenu}
+          >
+            Leader Board
+          </NavLink>
+          <a
+            className="block py-2 hover:bg-secondary hover:text-black my-5"
+            href="/#hadith"
+            onClick={toggleMenu}
+          >
+            Daily Hadith
+          </a>
+          <NavLink
+            className="block py-2 hover:bg-secondary hover:text-black my-5"
+            to="/quiz-home"
+            onClick={toggleMenu}
+          >
+            Play Quiz
+          </NavLink>
+        </div>
+      )}
     </nav>
   );
 };

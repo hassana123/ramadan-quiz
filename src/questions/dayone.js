@@ -88,7 +88,7 @@ const dayOneQuestions = [
     correctOption: 3,
   },
   {
-    question: "What did Allaah created you for?",
+    question: "What did Allah create you for?",
     options: [
       "Al Jannah",
       "To worship Him",

@@ -13,7 +13,7 @@ const Extras = () => {
         passion for learning.
       </p>
       <NavLink
-        to="/"
+        to="/quiz-home"
         className="text-whiteish bg-secondary py-3 px-10 rounded-[18px] hover:border hover:bg-whiteish hover:text-secondary"
       >
         Play Quiz
