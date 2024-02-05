@@ -1,140 +1,86 @@
 const dayFiveQuestions = [
   {
-    question: "How many Medina Surahs (Medina Chapter) do we have?",
-    options: ["28", "29", "30", "31", "32"],
+    question: "Who is obligated to pay Zakath?",
+    options: [
+      "Muslims who possess wealth more than the Nisab level for a period of one full lunar year",
+      "Zakath is obligatory for all Muslims",
+      "Zakath is only obligatory for business establishments",
+      "Zakath is not obligatory at all",
+    ],
     correctOption: 0,
   },
   {
-    question:
-      "Who was the companion whose real name was mentioned in the Quran?",
-    options: [
-      "Muhammad bn ‘Abdillah",
-      "Abubakr Siddiq",
-      "Umar bn Khatab",
-      "Zaydu bn Harithah",
-      "‘Abdullah bn ‘Abbas",
-    ],
-    correctOption: 3,
+    question: "What is the percentage of Zakat which Muslims pay?",
+    options: ["1.5%", "2.5%", "3.5%", "4.5%"],
+    correctOption: 1,
   },
   {
     question:
-      "What is the first word of Allaah that was first revealed to Prophet Muhammad (peace and blessing of Allaah be upon him) by Angel JIbril (May the peace be upon him)?",
+      "Can Zakath be given to those whose debts are greater than their income or wealth?",
     options: [
-      "Alif Lam Mim",
-      "Bimilah",
-      "Iqrah",
-      "A’undhubillah",
-      "Alhamdulillah",
+      "No, it is not permissible to give Zakath to people who are in debt",
+      "Yes, Zakath can be given to those whose debt is greater than their wealth",
+      "Zakath should not be given to any person",
+      "None of the above",
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "What humanitarian and socio-political responsibility does Zakath encourage among Muslims?",
+    options: [
+      "Zakath encourages Muslims to organise social get-togethers and parties",
+      "Zakath encourages Muslims to spend money in travelling to new places",
+      "Zakath encourages Muslims to redistribute wealth and boosts social responsibility",
+      "Zakath encourages Muslims to build new houses for themselves",
     ],
     correctOption: 2,
   },
   {
-    question: "How many times was the name Muhammad mentioned in the Quran?",
-    options: [
-      "one time",
-      "two times",
-      "three times",
-      "four times",
-      "five times",
-    ],
-    correctOption: 3,
-  },
-  {
-    question: "Which word falls at the middle of Quran?",
-    options: [
-      "Walyatalatof",
-      "yasaluunaka",
-      "fajama’naaum",
-      "Fa asqaynakumuuh",
-      "Fasayakfiikahumu",
-    ],
+    question: "How frequently do Muslims have to pay Zakath?",
+    options: ["Yearly", "Half Yearly", "Quarterly", "Monthly"],
     correctOption: 0,
   },
   {
     question:
-      "In which verse of the Quran do we find the name “Allah” two times sequentially without an alphabet separating them?",
+      "Can Zakath be given to those whose debts are greater than their income or wealth?",
     options: [
-      "Suratul Baqarah",
-      "Suratul Al-Imran",
-      "Suratun Nisaa",
-      "Suratul Maidah",
-      "Suratul An’am",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Al Quran script diacritics (phonetic guide marks; vowel marks) began during the tenure of …….",
-    options: [
-      "Abubakr Sidiq",
-      "Umar bn Khattab",
-      "‘Uthman bn ‘Affan",
-      "Ali bn Abi Talib",
-      "Khaleefah ‘Abdul Maliki bn Mirwan.",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "In which Chapter of the Quran can we find the name Allah in each verse of it?",
-    options: [
-      "Suratul Ikhlas",
-      "Suratul Mujadalah",
-      "Suratul Jumu’at",
-      "Suratul Hashr",
-      "Suratus Saf",
+      "No, it is not permissible to give Zakath to people who are in debt",
+      "Yes, Zakath can be given to those whose debt is greater than their wealth",
+      "Zakath should not be given to any person",
+      "None of the above",
     ],
     correctOption: 1,
   },
   {
-    question: "How many Mekkah Surahs do we have?",
-    options: ["28", "86", "63", "43", "32"],
-    correctOption: 1,
-  },
-  {
-    question: "How many Chapters of the Quran start with ‘Alhamdulillah’?",
-    options: ["1", "2", "3", "4", "5"],
-    correctOption: 4,
-  },
-  {
-    question: "How many Hizb (division) are there in the Quran?",
-    options: ["6666", "313", "114", "60", "30"],
-    correctOption: 3,
-  },
-  {
-    question:
-      "How many Sajdah (prostration of recitation) are there in the Quran?",
-    options: ["10", "15", "20", "25", "30"],
-    correctOption: 1,
-  },
-  {
-    question: "How many Chapters of the Quran start with Alif Laam Meem?",
-    options: ["6", "5", "4", "3", "2"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "They began putting dots on alphabets of the Quran during the tenure of ……………",
-    options: [
-      "Abubakr Sidiq",
-      "Umar bn Khattab",
-      "‘Uthman bn ‘Affan",
-      "Ali bn Abi Talib",
-      "Khaleefah ‘Abdul Maliki bn Mirwan.",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Which Chapter of the Quran comprises of two Bismillah Rahmani Raheem?",
-    options: [
-      "Suratul Ankabut",
-      "Suratul Insan",
-      "Suratun Naml",
-      "Suratul Rahman",
-      "Suratul Mulk",
-    ],
+    question: "What is the meaning of Zakath?",
+    options: ["To spend", "To receive", "Purification", "None of the above"],
     correctOption: 2,
+  },
+  {
+    question: "How many categories of people are eligible to receive Zakath?",
+    options: [
+      "Five Categories",
+      "Six Categories",
+      "Seven Categories",
+      "Eight Categories",
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "Who is obligated to pay Zakath?",
+    options: [
+      "Muslims who possess wealth more than the Nisab level for a period of one full lunar year",
+      "Zakath is obligatory for all Muslims",
+      "Zakath is only obligatory for business establishments",
+      "Zakath is not obligatory at all",
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "In which month did Zakat become obligatory?",
+    options: ["Muharram", "Rajab", "Sha'ban", "Ramadan"],
+    correctOption: 1,
   },
 ];
 export default dayFiveQuestions;

@@ -1,155 +1,107 @@
 const dayNineQuestions = [
   {
-    question:
-      "……………………….is the sacred hadith that its meaning is entirely from Allah while the wordings are that of the Prophet Muhammad himself May the peace and blessing of Allaah be upon him).",
+    question: "Is killing regarded as a sin in Islam?",
     options: [
-      "Al hadithul Mahfuz",
-      "Al hadithus Shadh",
-      "Al hadithul Qudsi",
-      "Al hadithul Ma’ruf",
-      "Al hadithul Mashur",
+      "Killing is a very minor sin",
+      "Killing (murder) is regarded as the second major sin",
+      "Killing just one person is not a sin",
+      "Killing is not considered as a sin",
     ],
-    correctOption: 2,
-  },
-  {
-    question: "Tadlis is of two types, they are …………… and ………….",
-    options: [
-      "Tadlis Sabiqah and Tadlis lahiqah",
-      "Tadlis Shadh and Tadlis Gareeb",
-      "Tadlis Sanad and Tadlis Matn",
-      "Tadlis Sahih and Tadlis Da’eef",
-      "Tadlis Isnad and Tadlis Shuyuk",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Sahih Bukhari comprises of how many Hadiths (Note: Including repetition)?",
-    options: ["7653", "7563", "7635", "7536", "7663"],
-    correctOption: 1,
-  },
-  {
-    question: "……………………….is the narration that is reported in different ways.",
-    options: [
-      "Al Mudallas",
-      "As Shadh",
-      "Al Mudraj",
-      "Al Mudtarib",
-      "Al Munkar",
-    ],
-    correctOption: 3,
-  },
-  {
-    question: "Maqlub is divided into two, what are they?",
-    options: [
-      "Maqlubus Sabiqah and Maqlubu lahiqah",
-      "Maqlubu Shadh and Maqlubu Gareeb",
-      "Maqlubus Sanad and Maqlubu Matn",
-      "Maqlubu Sahih and Maqlubu Da’eef",
-      "Maqlubu Isnad and Maqlubu Shuyuk",
-    ],
-    correctOption: 2,
-  },
-  {
-    question:
-      "……………………….is the narration by a lesser authority in opposition to a narration of a more reliable authority.",
-    options: ["Al Mudallas", "As Shadh", "Al Mudraj", "Al Maodu’", "Al Munkar"],
     correctOption: 1,
   },
   {
     question:
-      "………………………….is the narration that a reporter or more are omitted at the beginning of the Isnad.",
+      "What does Islam say about killing of people and other living beings?",
     options: [
-      "Al Mu’allaq",
-      "Al Maoquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
-    ],
-    correctOption: 0,
-  },
-  {
-    question: "An authentic Hadith is divided into two. What are they?",
-    options: [
-      "Bukahri and Muslim",
-      "Isnad and Matn",
-      "Sahih lithatih and Sahih ligayrih",
-      "Hadith Qudsi and Hadith Nabiy",
-      "Sahih isnad and Sahih shuyuk",
-    ],
-    correctOption: 2,
-  },
-  {
-    question:
-      "…………………………is the person whose specialization is on Science of Hadith; has knowledge of many narrations with the level of authority of their reporters, and he is synonymous to Hafiz according to some scholars.",
-    options: ["Mufti", "Shaykul Islam", "Al Muhaddith", "Raawiy", "Faqeeh"],
-    correctOption: 2,
-  },
-  {
-    question:
-      "…………… is a book of hadith that its hadiths are arranged according to each companion’s name.",
-    options: ["As Sunan", "Al Jami’", "Al Musnad", "Al Mu’jam", "Al Mustadrak"],
-    correctOption: 2,
-  },
-  {
-    question:
-      "…………is a hadith that two or more reporters were omitted in its Isnad consecutively.",
-    options: [
-      "Al Mu’dal",
-      "Al Maoquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "…………….is a hadith that is not connected irrespective of the stage where a reporter is omitted.",
-    options: [
-      "Al Mu’dal",
-      "Al Maoquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
+      "Children can be killed",
+      "Adults can kill older people",
+      "The strong can kill the weak in society",
+      "Killing one person (whether Muslim or Non-Muslim) is equivalent to killing the entire humanity",
     ],
     correctOption: 3,
   },
   {
-    question:
-      "Where two accepted hadiths controvert each other, the three stages of its treatment are……, ……and…...",
+    question: "What is the meaning of Jihad?",
     options: [
-      "Aljam’u, At Tarikh and At Tarjeeh",
-      "Isnad, Matn and Taraf",
-      "Sahih, Hassan and Da’eef",
-      "Raawiy, Marwiy ‘anh and Riwayah",
-      "Sahabah, Tabi’ and Tabi’u Tabi’in",
+      "Jihad means killing people",
+      "Jihad in Islam means “striving or struggling” in the way of Allah",
+      "Jihad means destruction",
+      "None of the above",
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "In what circumstances is fighting permitted in Islam?",
+    options: [
+      "Islam permits the fighting in self-defence, or retribution against tyranny, exploitation and oppression",
+      "Fighting is permitted in all circumstances",
+      "Fighting is permitted only for the Arabs",
+      "Fighting is not permitted in Islam",
     ],
     correctOption: 0,
   },
   {
     question:
-      "Whoever meets the Prophet Muhammad (May the peace and blessing of Allaah be upon him) in a state of Iman and die as a Muslim is called……………….",
+      "Does Islam permit killing of elderly people, women and children during a war?",
     options: [
-      "Al Ansar",
-      "Al Muhajirin",
-      "As Shahid",
-      "As Sahabiy",
-      "At Tabi’",
+      "No, even during a war situation it is prohibited to kill or even cause any harm to the non-combatants, such as the elderly, women and children. Islam also prohibits cutting down trees and crops, and killing of animals in the enemy nation",
+      "During a war situation it is permitted to kill everyone from the enemy side",
+      "Only elderly and women can be killed, children should not be harmed",
+      "None of the above",
     ],
-    correctOption: 3,
+    correctOption: 0,
+  },
+  {
+    question: "What does Islam prescribe about brotherhood?",
+    options: [
+      "Islam prescribes universal brotherhood",
+      "Islam prescribes nation based brotherhood",
+      "Islam prescribes war and force",
+      "There is no brotherhood mentioned in Islam",
+    ],
+    correctOption: 0,
   },
   {
     question:
-      "Hadith Hassan (sound hadith) is divided into two, what are they?",
+      "What does Allah mention in the Quran about the enemy who seek peace during a war situation?",
     options: [
-      "Daud and Ibn Majah",
-      "Isnad and Matn",
-      "Hassan lithatih and Hassan ligayrih",
-      "Hadith Qudsi and Hadith Nabiy",
-      "Haassan isnad and Hassan shuyuk",
+      "There should be no peace in war situation",
+      "If the enemy seek peace, then Muslims also should seek peace, and the responsibility of their safety is on the Muslims",
+      "Kill the enemy even if they seek peace",
+      "None of the above",
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "What does Islam say about saving one person’s life?",
+    options: [
+      "Saving one person’s life (whether Muslim or Non-Muslim) is equivalent to saving the entire humanity",
+      "Saving a person’s life does not have any significance",
+      "Saving a person’s life is prohibited",
+      "None of the above",
+    ],
+    correctOption: 0,
+  },
+  {
+    question: "What did the Prophet term as the greatest Jihad?",
+    options: [
+      "The greatest Jihad is to lie to others",
+      "The greatest Jihad is to suppress the weak",
+      "The greatest jihad is to struggle with the insidious suggestions of one’s own soul",
+      "There is no greatest Jihad",
     ],
     correctOption: 2,
+  },
+  {
+    question:
+      "How do the values of Quran hold Muslims responsible for treating all people?",
+    options: [
+      "A Muslim is not responsible for any treatment towards others",
+      "A Muslim is responsible for treating Muslims alone with kindness",
+      "A Muslim is responsible for treating only the Non-Muslims with kindness",
+      "A Muslim is responsible for treating all people, whether Muslim or non-Muslim, kindly and justly, protecting the needy and the innocent and 'preventing the dissemination of mischief'",
+    ],
+    correctOption: 3,
   },
 ];
 export default dayNineQuestions;

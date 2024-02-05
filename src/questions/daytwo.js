@@ -1,132 +1,110 @@
 const dayTwoQuestions = [
   {
-    question: "Shaytan places his throne on ………………………",
-    options: ["Air", "Water", "Fire", "Mountain", "Sky"],
-    correctOption: 1,
-  },
-  {
-    question: "Which Angel is in charge of vegetation and rains drop?",
+    question: "Does Islam blame women for the fall of man from paradise?",
     options: [
-      "Angel Israfil",
-      "Angel Mikail",
-      "Angel Jibril",
-      "Angel ‘Atid",
-      "Angel Malik",
+      "Yes, similar to Christianity and Judaism, Islam also blames women for the fall of man",
+      "Only men are blamed in Islam",
+      "No, Islam does not blame women for the fall of man from paradise",
+      "None of the above",
     ],
-    correctOption: 1,
+    correctOption: 2,
   },
   {
-    question: "What are the types of Shirk?",
+    question: "How should women be treated in Islam?",
     options: [
-      "Major and Minor Shirk",
-      "Obligatory and Voluntary Shirk",
-      "Shaitan and Human Shirk",
-      "Forgiven and Unforgiven Shirk",
-      "Belief and Disbelief Shirk",
+      "Women should be treated as slaves",
+      "Women are considered as bad omens and sinful",
+      "Women be treated with respect, honour and justice. It condemns oppression of any kind",
+      "None of the above",
     ],
-    correctOption: 0,
+    correctOption: 2,
   },
   {
-    question: "What is the difference between Shirkul Akbar and Shirkul Asgar?",
+    question: "Does Islam teach about the right to education for women?",
     options: [
-      "The later takes one outside the fold of Islam whereas the former does not",
-      "The former reduces faith whereas the later does not",
-      "The former takes one outside the fold of Islam whereas the later does not",
-      "The later reduces faith whereas the former does not",
-      "The former increases faith whereas the later reduces it",
+      "The right to education is only for men",
+      "There is no education system in Islam",
+      "In Islam, seeking knowledge is mandatory for every Muslim (both men and women)",
+      "None of the above",
     ],
     correctOption: 2,
   },
   {
     question:
-      "Prophet Muhammad (May the peace and blessing of Allaah be upon him) said: 'Whoever swears with anything other than Allaah has already…………………………'",
-    options: ["Succeed", "Disbelieve", "Sin", "Dead", "Swear"],
+      "Can women hold important positions in governments or politics in Islam?",
+    options: [
+      "No, women cannot hold any important positions in government",
+      "Yes, women can hold important positions in government and politics",
+      "Only men are allowed to hold important positions in government",
+      "No one can hold positions in government",
+    ],
     correctOption: 1,
   },
   {
     question:
-      "Slaughtering in respect of somebody other than Allaah is ………………….",
-    options: ["Minor sin", "Allowed", "Crime", "Major Shirk", "Minor Shirk"],
-    correctOption: 3,
+      "Are women allowed to remarry in Islam after divorce or death of the husband?",
+    options: [
+      "Yes, remarriage for women is permitted in Islam",
+      "No, remarriage is not permitted for women in Islam",
+      "Only men have the right to remarry",
+      "None of the above",
+    ],
+    correctOption: 0,
   },
   {
     question:
-      "Is it right to eat from what was slaughtered to a holy man, if at all; name of Allaah was mentioned before slaughtering?",
-    options: ["Yes", "No"],
+      "What did the Prophet Muhammad (PBUH) mention about the raising of daughters?",
+    options: [
+      "Anyone who raises two daughters with love and affection will enter paradise",
+      "Daughters are ill omens and should not be given love and affection",
+      "There is no mention about the raising of daughters by the Prophet (PBUH)",
+      "None of the above",
+    ],
+    correctOption: 0,
+  },
+  {
+    question:
+      "What did the Prophet Muhammad (PBUH) mention about the status of a Mother?",
+    options: [
+      "Mothers are not important at all",
+      "Paradise is beneath the feet of a mother",
+      "Mothers are bad omens",
+      "None of the above",
+    ],
     correctOption: 1,
   },
   {
     question:
-      "Destinies of each have been written by Allaah before He created heavens and earths about………………………… years.",
-    options: ["50", "500", "5000", "50000", "500000"],
-    correctOption: 3,
+      "What is mentioned about the equality of men and women in the Quran?",
+    options: [
+      "Men are always superior to women in all aspects",
+      "Women are always superior to men in all aspects",
+      "Men and women have the same religious and moral duties and responsibilities",
+      "None of the above",
+    ],
+    correctOption: 2,
   },
   {
-    question: "What is the man’s right on Allah?",
+    question:
+      "Does Islam permit women to inherit the property or a share of the property from their parents?",
     options: [
-      "He will punish not those who do not associate thing to Him",
-      "To worship Him and not associate partner to Him",
-      "To worship Him",
-      "To praise Him",
-      "To associate no partner to Him",
+      "Yes, both men and women are entitled to a specified share of the property left behind by their parents or close relatives",
+      "Only men can inherit the property of the parents and close relatives",
+      "The property left behind is offered in charity to the poor",
+      "None of the above",
     ],
     correctOption: 0,
   },
   {
     question:
-      "What will be the first food that dwellers of Paradise will take?",
+      "Do Muslim women have the right to accept or deny marriage proposals?",
     options: [
-      "Fish",
-      "Cow meat",
-      "Dates",
-      "Camel meat",
-      "Extra-lobe of fish-liver",
-    ],
-    correctOption: 4,
-  },
-  {
-    question: "Good dream comes from Allah and bad dream comes from …………………",
-    options: ["Allaah", "Heaven", "Shaitan", "Azarail", "Hell"],
-    correctOption: 2,
-  },
-  {
-    question: "What is the first major sign of the last hour?",
-    options: [
-      "Emergence of Dajjal",
-      "Descend of ‘Issa peace be upon him",
-      "A fire that will bring together the people from the east to the west",
-      "Gog and Magog",
-      "Rising of the sun from the west",
-    ],
-    correctOption: 2,
-  },
-  {
-    question: "Does the Paradise and Hell fire exist?",
-    options: ["Yes", "No"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "What are the three basic things that are compulsory for everybody to know?",
-    options: [
-      "To know about our lord, His religion and His messenger (Prophet Muhammad peace and blessings of Allaah be upon him)",
-      "To know about our lord, His angels and His messengers",
-      "To know about Allah, His angels and His books",
-      "To know about Allah, His messengers and His books",
-      "To know about messengers, angels and divine revelations",
+      "Muslim women have full rights to accept or deny marriage proposals",
+      "Muslim women cannot choose their suitors",
+      "Parents of the bride have the right",
+      "None of the above",
     ],
     correctOption: 0,
-  },
-  {
-    question: "What are the three roots of worship?",
-    options: [
-      "Knowledge, action and patience",
-      "Knowledge, practice and calling people",
-      "Love, fear and hope",
-      "Declaration, prayer and fasting",
-      "Testimony, affirmation and action",
-    ],
-    correctOption: 2,
   },
 ];
 

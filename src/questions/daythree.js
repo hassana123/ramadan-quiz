@@ -1,135 +1,91 @@
 const dayThreeQuestions = [
   {
-    question:
-      "Who is the person that will receive the least punishment, among the dwellers of Hell fire that his shoes will be heated by fire and his brain will be boiling?",
-    options: [
-      "Abu Lahab",
-      "Abu Jahl",
-      "Abu Luhluhati Almajusiy",
-      "Abu Talib",
-      "Ubayi bn Khalaf",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "What is the ruling on visiting a Soothsayer, merely asking him something without believing him?",
-    options: [
-      "Disbelief in Allaah",
-      "Major Shirk",
-      "It takes one outside the fold of Islam",
-      "Allaah will not accept his/her Salat for 40 days",
-      "It is permissible",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "What is the ruling on visiting a Soothsayer, asking him something and believing him?",
-    options: [
-      "Disbelief in Allaah",
-      "Major Shirk",
-      "It takes one outside the fold of Islam",
-      "Allaah will not accept his/her Salat for 40 days",
-      "It is permissible",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "Two conditions for worship of a Muslim to be accepted are …………. and……………",
-    options: [
-      "sincerity and belief",
-      "sincerity and hope",
-      "sincerity and in accordance with Sunnah of Muhammad SAW",
-      "Islam and sincerity",
-      "sincerity and hope",
-    ],
+    question: "How many times does a Muslim offer obligatory prayers in a day?",
+    options: ["Three times", "Four times", "Five times", "Six times"],
     correctOption: 2,
   },
   {
     question:
-      "Conditions of Taobah (repentance) that has nothing to do with the rights of another person are ……. ",
-    options: ["six", "five", "four", "three", "two"],
-    correctOption: 1,
+      "Which Surah (chapter) of the Quran is recited in every rakath of salah (prayers)?",
+    options: [
+      "Al-Ikhlas (chapter 112)",
+      "An-Nas (chapter 114)",
+      "Al-Fatihah (chapter 1)",
+      "Al-Ala (chapter 87)",
+    ],
+    correctOption: 2,
   },
   {
-    question:
-      "Conditions of Taobah (repentance) that has to do with the rights of another person are ……. ",
-    options: ["six", "five", "four", "three", "two"],
+    question: "Which direction do Muslims face while offering salah (prayers)?",
+    options: [
+      "Kabah (Makkah)",
+      "Baitul Muqaddas (Al-Aqsa Mosque Palestine)",
+      "Sheikh Zayed Grand Mosque (Dubai)",
+      "The Al-Fateh Mosque (Bahrain)",
+    ],
     correctOption: 0,
   },
   {
     question:
-      "Is it right to start greeting Non-Muslims by saying: Assalam ‘alaik?",
-    options: ["Yes", "No"],
-    correctOption: 1,
+      "Which prayer does Allah mention in the Holy Quran to especially guard?",
+    options: [
+      "Fajr Salah (pre-dawn prayers)",
+      "Asar Salah (middle prayers)",
+      "Zuhr Salah (mid-afternoon prayers)",
+      "Maghrib prayers (sunset prayers)",
+    ],
+    correctOption: 0,
   },
   {
-    question: "Is the real name of the Angel of Death Azarail?",
-    options: ["Yes", "No"],
-    correctOption: 1,
+    question: "How do Muslims begin their prayers?",
+    options: [
+      "By Saying Bismillah (In the Name of Allah)",
+      "By Saying Subhanallah (Glory be to Allah)",
+      "By Saying Alhamdulillah (All praise is due to Allah)",
+      "By Saying Allahu Akbar (By pronouncing the greatness of Almighty Allah)",
+    ],
+    correctOption: 0,
   },
   {
     question:
-      "Do we truly have Waliy (Holy man), today, among Non-Muslim and hypocrites?",
-    options: ["Yes", "No"],
-    correctOption: 1,
+      "How many rakath (units of prayers) does a Muslim pray during the obligatory maghrib salah (prayers)?",
+    options: ["Two rakath", "Three rakath", "Four rakath", "None of the above"],
+    correctOption: 2,
   },
   {
-    question: "Who was first known with Ta’teel (denial of Allah’s attribute)?",
+    question:
+      "Who among Muslims have the privilege to stand in the first row for salah (prayers), behind the Imam?",
     options: [
-      "‘Abdullah bn Saba’",
-      "Wasil bn ‘Ata’",
-      "‘Amr bn Umayd",
-      "Al Ja’du bn Dirham",
-      "Ma’badu Aljuhani bn Khalid",
+      "Powerful men have the right to stand in the front row during salah (prayers)",
+      "Men from Saudi Arabia have the right to stand in the front row during salah (prayers)",
+      "White men have the right to stand in the front row during salah (prayers)",
+      "There is no privilege to anyone to stand in the first row. Even a king stands in the row besides an ordinary man during salah (prayers)",
     ],
     correctOption: 3,
   },
   {
-    question:
-      "Highness of Allaah (‘Uluwu) is divided in to two; highness of ……and……",
+    question: "Are women allowed to go to mosques to offer prayers?",
     options: [
-      "names and attributes",
-      "attributes and action",
-      "essence and attributes",
-      "names and essence",
-      "action and essence",
+      "No, women are not allowed in the mosque",
+      "Women can only listen to prayers",
+      "Yes, women can offer prayers in mosques, provided there are separate facilities and provision",
+      "Women can pray in the mosque, standing right beside the men",
     ],
-    correctOption: 0,
+    correctOption: 2,
   },
   {
-    question: "Is it possible for man to be afflicted by “the eye” (evil eye)?",
-    options: ["Yes", "No"],
-    correctOption: 0,
-  },
-  {
-    question: "Masih Dajjal will come out, for how long will he live on earth?",
-    options: ["One year", "forty days", "thirty days", "seven days", "one day"],
-    correctOption: 1,
-  },
-  {
-    question:
-      "With relevance to the most accepted view, the first man to reject destiny was ……………",
+    question: "What should Muslims perform before offering salah (prayers)?",
     options: [
-      "‘Abdullah bn Saba’",
-      "Wasil bn ‘Ata’",
-      "‘Amr bn Umayd",
-      "Al Ja’du bn Dirham",
-      "Ma’badu Aljuhani bn Khalid",
+      "Wearing of skull-cap",
+      "Wearing of perfume",
+      "Wudu (ablution)",
+      "Clipping of nails",
     ],
-    correctOption: 4,
+    correctOption: 2,
   },
   {
-    question: "Allah created stars for three things, what are they?",
-    options: [
-      "To beautify the night sky, projectiles against the devils and guidance for the wayfarer at night",
-      "For calculation, guidance and beautification of sky",
-      "For calculation, determination of future occurrence and guidance",
-      "For calculation, determination of future occurrence and beautification of sky",
-      "To beautify the night sky, determination of future occurrence and guidance for the wayfarer at night",
-    ],
+    question: "What is the call for prayer called?",
+    options: ["Adhan", "Takbeer", "Kalimah", "Salah"],
     correctOption: 0,
   },
 ];

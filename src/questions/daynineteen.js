@@ -3,7 +3,7 @@ const dayNineteenQuestions = [
     question:
       "Man actions are determined by him without Allah’s knowledge, this is the belief (Aqeedah) of ………………",
     options: ["Jabariyah", "Qadriyah", "Qadariyah", "Mu’tazilah", "Khawarij"],
-    correctOption: 0,
+    correctOption: 2,
   },
   {
     question: "What is the full name of ‘Imam Mahdi’?",
@@ -71,7 +71,7 @@ const dayNineteenQuestions = [
       "Suratul Hadid",
       "Suratul Fatiah",
     ],
-    correctOption: 2,
+    correctOption: 1,
   },
   {
     question:
@@ -83,7 +83,7 @@ const dayNineteenQuestions = [
       "four times",
       "five times",
     ],
-    correctOption: 2,
+    correctOption: 3,
   },
   {
     question:
@@ -107,7 +107,7 @@ const dayNineteenQuestions = [
       "Ziyadatul Thiqah",
       "Ziyadah",
     ],
-    correctOption: 2,
+    correctOption: 3,
   },
   {
     question:
@@ -136,14 +136,20 @@ const dayNineteenQuestions = [
   {
     question:
       "…………….is the book of hadith that the author arranged its hadiths in alphabetical order.",
-    options: ["As Sunan", "Al Jami’", "Al Musnad", "Al Mu’jam", "Al Mustadrak"],
-    correctOption: 2,
+    options: [
+      "As Sunan",
+      "Al Jami’",
+      "Al Musnad",
+      "Al Mu’jamu",
+      "Al Mustadrak",
+    ],
+    correctOption: 3,
   },
   {
     question:
       "……………… is the book of hadith that the author arranged its hadiths in the ordering of the books of fiqh.",
     options: ["As Sunan", "Al Jami’", "Al Musnad", "Al Mu’jam", "Al Mustadrak"],
-    correctOption: 1,
+    correctOption: 0,
   },
 ];
 

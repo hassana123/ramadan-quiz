@@ -1,152 +1,85 @@
 const dayEightQuestions = [
   {
     question:
-      "… is a Hadith that is reported by an unreliable reporter and containing vulgar statements that are against what a reliable reporter narrates.",
-    options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawdu’",
-      "Al Mudraj",
-      "Al Munkar",
-      "Al Gareeb",
-    ],
-    correctOption: 4,
+      "What is the state of purity in which all pilgrims enter Makkah for Hajj called?",
+    options: ["Adhaan", "Ihram", "Istikhara", "Ababa"],
+    correctOption: 1,
   },
   {
-    question: "Al-Mudraj is classified into two, what are they?",
+    question: "Which Islamic principle does the Hajj demonstrate?",
     options: [
-      "Mudrajus Sabiqah and Mudraju lahiqah",
-      "Mudrajus Shadh and Mudrajul Gareeb",
-      "Mudrajus Sanad and Mudrajul Matn",
-      "Mudrajus Sahih and Mudrajul Da’eef",
-      "Mudrajus Snad and Mudrajus Shuyuk",
+      "Importance of children",
+      "Equality and universal brotherhood",
+      "Importance of charity",
+      "Celebrations",
+    ],
+    correctOption: 1,
+  },
+  {
+    question:
+      "What is the name of the place where the pilgrims pelt stones on pillars representing the devil?",
+    options: ["Al-Jamarat", "Mina", "Muzdalifa", "None of the above"],
+    correctOption: 0,
+  },
+  {
+    question: "What is considered to be the most important part of the Hajj?",
+    options: [
+      "When pilgrims circumambulate the Kaabah",
+      "When pilgrims stone the Pillars representing the devil",
+      "The day the pilgrims spend praying on the Plains of Arafah",
+      "Days spent in Mina and Muzdalifah",
     ],
     correctOption: 2,
   },
   {
-    question: "Is it all Musnad (Supported) Hadith that are authentic?",
-    options: ["Yes", "No"],
-    correctOption: 1,
-  },
-  {
-    question:
-      "… is a Hadith narrated by a more reliable reporter against what a lesser authority reported.",
-    options: [
-      "Alhadithul Mahfuz",
-      "Alhadithus Shadh",
-      "Alhadithul Munkar",
-      "Alhadithul Ma’ruf",
-      "Alhadithul Mashur",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "A Muslim that meets Companion(s) of the Prophet (May the peace and blessing of Allaah be upon him) and died as a Muslim is known as …",
-    options: ["Tabi’y", "Sahabah", "Sahabiyah", "Sharif", "Maolah"],
-    correctOption: 0,
-  },
-  {
-    question: "Who among the Companions reported Hadith the most?",
-    options: [
-      "Abubakr Sidiq",
-      "‘Aisha bint Abubakr",
-      "Ali bn Abi Talib",
-      "Abu Hurairah",
-      "Anas bn Malik",
-    ],
+    question: "How many times do the Muslims circumambulate the Kaabah?",
+    options: ["One Time", "Three Times", "Five Times", "Seven Times"],
     correctOption: 3,
   },
   {
-    question: "Which book is the first book of authentic Hadiths?",
+    question: "During which month is the Hajj performed?",
+    options: ["Dhul-Hijjah", "Ramadhan", "Muharram", "Rajjab"],
+    correctOption: 0,
+  },
+  {
+    question: "What is Hajj?",
     options: [
-      "As Saheehah by Albani",
-      "Sahih al-Bukhari",
-      "Sahih Muslim",
-      "Muwata by Imam Malik",
-      "Almaodu’at by Ibn Jaoziy",
-    ],
-    correctOption: 1,
-  },
-  {
-    question:
-      "………………………is a Hadith which is narrated by a large number of its reporters equally at the beginning, at the middle and at the end, reported from a large number of people that they cannot be expected to agree upon a lie, all of them together.",
-    options: [
-      "Al Ma’ruf",
-      "Al Mutawatir",
-      "Al Mashur",
-      "Al Marfu’",
-      "Al Mahfuz",
-    ],
-    correctOption: 1,
-  },
-  {
-    question:
-      "…………………….is a Hadith that was narrated by a reliable reporter against what an unreliable reporter narrates.",
-    options: ["Al Mahfuz", "As Shadh", "Al Munkar", "Al Ma’ruf", "Al Mashur"],
-    correctOption: 3,
-  },
-  {
-    question: "Is ‘Aziz’ (Rare) a condition for an authentic Hadith?",
-    options: ["Yes", "No"],
-    correctOption: 1,
-  },
-  {
-    question:
-      "………………………is a Hadith that is void of a condition out of conditions of Hadith ‘Hassan’ (Good)",
-    options: [
-      "Al Maqlub",
-      "Ad Da’eef",
-      "Al Mu’allal",
-      "Al Munkar",
-      "Al Mahfuz",
-    ],
-    correctOption: 1,
-  },
-  {
-    question:
-      "……………………..is a Hadith which was reported by more than two reporters equally at each stage of Isnad and did not reach the level of Mutawatir.",
-    options: [
-      "Al Ma’ruf",
-      "Al Mudtarib",
-      "Al Mashur",
-      "Al Marfu’",
-      "Al Mahfuz",
+      "Pilgrimage to Shrines",
+      "Pilgrimage to Monasteries",
+      "Pilgrimage to Makkah (Saudi Arabia)",
+      "Family Get-together",
     ],
     correctOption: 2,
   },
   {
-    question:
-      "……………………..is a Hadith that its defect is that there is an overturn in the arrangement of chains and content.",
+    question: "What do Muslims recite during and throughout the Hajj?",
     options: [
-      "Al Maqlub",
-      "Ad Da’eef",
-      "Al Mu’allal",
-      "Al Munkar",
-      "Al Mahfuz",
+      "Al-Fatiha",
+      "Taalbiya",
+      "Declaration of Hajj",
+      "There is no specific recitation",
     ],
-    correctOption: 0,
+    correctOption: 1,
   },
   {
     question:
-      "………………………is the narration from Successors or those who follow them.",
+      "How many times do Muslims have to perform Hajj in their lifetime?",
     options: [
-      "Al Hadith ‘Aziz",
-      "Al Maoquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
+      "Every year",
+      "Once in five years",
+      "Once in a decade",
+      "Once in their lifetime, if they are physically and financially able",
     ],
-    correctOption: 4,
+    correctOption: 3,
   },
   {
     question:
-      "……………………….is the narration that conceals defects while it shows authenticity from mere looking.",
+      "What does the running or swift walking of pilgrims seven times between the hills of Safaa and Marwah represent?",
     options: [
-      "Al Maqlub",
-      "Ad Da’eef",
-      "Al Mu’allal",
-      "Al Munkar",
-      "Al Mahfuz",
+      "The number of times the Prophet Muhammad performed the Hajj in his lifetime",
+      "The number of times the Prophet Abraham (PBUH) tried to build the Kaabah before he succeeded",
+      "The number of times Hagar ran back and forth between the hills searching for water for her son, Prophet Ishmael (PBUH)",
+      "The number of miles the Prophet Muhammad travelled from Medina to Mecca to perform the Hajj",
     ],
     correctOption: 2,
   },

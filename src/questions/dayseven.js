@@ -1,149 +1,79 @@
 const daySevenQuestions = [
   {
-    question:
-      "How many classes do we have when we classify Hadith according to the number of reporters involved in each stage of Sanad?",
-    options: ["4 Classes", "2 Classes", "6 Classes", "5 Classes", "3 Classes"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "When classifying Hadith according to the accepted and rejected (this is done according to reliability and memory of the reporters) we have how many classes?",
-    options: ["4 Classes", "2 Classes", "6 Classes", "5 Classes", "3 Classes"],
-    correctOption: 4,
-  },
-  {
-    question: "What a reporter of Hadith adds to the Hadith is called…?",
-    options: ["Al Mudallas", "As Shadh", "Al Mudraj", "Al Mawdu’", "Al Munkar"],
-    correctOption: 2,
-  },
-  {
-    question:
-      "… means a Hadith which is weak due to the uncertainty caused by concealed defects made by the reporter of that Hadith.",
-    options: ["Al Mudallas", "As Shadh", "Al Mudraj", "Al Mawdu’", "Al Munkar"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "What is the name of the Hadith that the reporter at the end of transmitters after ‘Successor’ was omitted?",
-    options: ["Al Mursal", "Al Mawdu’", "Al Mudraj", "Al Munkar", "Al Gareeb"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "What is the name of the Hadith that only one single reporter is found narrating it some stage of Isnad?",
+    question: "How many days does an Islamic month consist of?",
     options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawdu’",
-      "Al Mudraj",
-      "Al Munkar",
-      "Al Gareeb",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "A Hadith narrated from Prophet is Marfu (Elevated) while a Hadith narrated from the Companion is …?",
-    options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
-    ],
-    correctOption: 1,
-  },
-
-  {
-    question: "Four classifications of accepted hadiths are…, …, … and …",
-    options: [
-      "Sahih, Hassan, Gareeb and Maqlub",
-      "Sahih, Hassan, Gareeb and Musalsal",
-      "Sahih, Hassan, Gareeb and Shadh",
-      "Sahih, Hassan, Mahfuz and Shadh",
-      "Sahih lithatih, Sahih ligayrih, Hassan lithatih and Hassan ligayrih",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Two generally accepted reasons for rejecting a Hadith are … and …",
-    options: [
-      "Chain and Content",
-      "Lie and Fabrication",
-      "Interruption in the chain of transmission and Defects",
-      "Period and Contradiction",
-      "Obscure and Time",
-    ],
-    correctOption: 2,
-  },
-  {
-    question:
-      "When two connected people narrate a Hadith from each other, the narration is called…?",
-    options: [
-      "Al Mudabbaj",
-      "Riwayatul aqran",
-      "Al Musalsal",
-      "Al Ma’ruf",
-      "Al Mahfuz",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "………………………is a Hadith that in each stage of Isnad only two reporters are found narrating it.",
-    options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawdu’",
-      "Al Mudraj",
-      "Al Munkar",
-      "Al Gareeb",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "………………………………………is a Hadith that is narrated by a liar or the content of the Hadith is against Islamic rules.",
-    options: [
-      "Al Mursal",
-      "Al Maodu’",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Gareeb",
+      "28 or 29 days",
+      "29 or 30 days",
+      "30 or 31 days",
+      "31 or 32 days",
     ],
     correctOption: 1,
   },
   {
-    question: "Science of Hadith is classified in to two, what are they?",
+    question: "What is the first month of the Islamic calendar?",
+    options: ["Rajjab", "Ramadhan", "Dhul-Hijjah", "Muharram"],
+    correctOption: 3,
+  },
+  {
+    question: "What is the Islamic calendar named?",
     options: [
-      "Sahih and Da’eef",
-      "Isnad and Matn",
-      "Ilm lhadith Riwayah and Ilm lhadith Dirayah",
-      "Ilm Rijal and Ilm Riwayah",
-      "Maqbul and Mardud",
+      "Hijrah / Hijri calendar",
+      "Gregorian calendar",
+      "Roman calendar",
+      "Persian calendar",
     ],
-    correctOption: 2,
+    correctOption: 0,
   },
   {
     question:
-      "………………………is a Hadith that has uninterrupted Isnad narrated by reliable traditionalists with high retentive memory from another traditionalist of the same status, and void of irregularity and defects.",
+      "During the month of Dhul-Hijjah which important Pillar of Islam is commemorated?",
     options: [
-      "Hadith Hassan",
-      "Hadith Sahih",
-      "Hadith Gareeb",
-      "Hadith Da’eef",
-      "Hadith Mashur",
+      "Sawm (Fasting)",
+      "Hajj (Pilgrimage)",
+      "Zakath (Obligatory Charity)",
+      "None of the above",
     ],
     correctOption: 1,
   },
   {
-    question:
-      "When only one of the two connected people narrates Hadith from his partner and his partner did not narrate any from him, the narration is called…?",
+    question: "When is the Islamic festival Eid-ul-Fitr celebrated?",
     options: [
-      "Al Mudabbaj",
-      "Riwayatul aqran",
-      "Al Musalsal",
-      "Al Ma’ruf",
-      "Al Mahfuz",
+      "1st day of Ramadhan",
+      "1st day of Shawwal",
+      "1st day of Shaaban",
+      "1st day of Muharram",
+    ],
+    correctOption: 1,
+  },
+  {
+    question: "The Islamic calendar is based on which of the following cycles?",
+    options: ["Solar", "Lunar", "Both solar and lunar", "None of the above"],
+    correctOption: 1,
+  },
+  {
+    question:
+      "In which month do Muslims from all across the world fast for a month from dawn to dusk?",
+    options: ["Ramadhan", "Shabaan", "Muharram", "Rai-ul-Awwal"],
+    correctOption: 0,
+  },
+  {
+    question: "During which month is Eid-ul-Adha celebrated?",
+    options: ["Shawwal", "Ramadhan", "Dhul-Hijjah", "Muharram"],
+    correctOption: 2,
+  },
+  {
+    question: "In which month was the Quran revealed?",
+    options: ["Rabi-ul-Awwal", "Muharram", "Shaaban", "Ramadhan"],
+    correctOption: 3,
+  },
+  {
+    question:
+      "What are the four months which are considered sacred in Islam, when warfare and any kind of fighting is prohibited?",
+    options: [
+      "Muharram, Safar, Rajjab, Shaaban",
+      "Muharram, Rajjab, Dhul-Qaida, Dhul-Hijjah",
+      "Muharram, Ramadhan, Shawwal, Shaaban",
+      "There are no sacred months",
     ],
     correctOption: 1,
   },
