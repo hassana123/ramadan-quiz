@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import like from "../assets/like.png";
+import arrow from "../assets/backarrow.png";
 import { firestore } from "../../firebase"; // Adjust the path to your Firebase configuration
-import { collection, addDoc,serverTimestamp } from "firebase/firestore";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 const CompleteQuiz = () => {
   const navigate = useNavigate();
   const [save, setSave] = useState(false);
@@ -25,7 +26,7 @@ const CompleteQuiz = () => {
       await addDoc(leaderboardCollection, {
         name: userName,
         score: parseInt(score),
-          timestamp: serverTimestamp(),
+        timestamp: serverTimestamp(),
       });
 
       alert("Score saved successfully!");
@@ -39,6 +40,12 @@ const CompleteQuiz = () => {
   return (
     <>
       <main className="font-custom2 bg-mainbg p-2 w-full ">
+        <img
+          onClick={() => navigate("/quiz-home")}
+          className="cursor-pointer"
+          src={arrow}
+          alt="back"
+        />
         <section className="text-center p-1 bg-whiteish rounded-[16px] shadow-md w-[98%] mt-[100px] mx-auto text-black">
           <img className="mx-auto mt-[-90px]" src={like} alt="like" />
           <h1 className="mb-3 mt-[-15px] text-[36px] font-700">Masha Allah</h1>
@@ -76,7 +83,7 @@ const CompleteQuiz = () => {
         </section>
         <button
           onClick={() => navigate("/")}
-          className="block mx-auto bg-whiteish hover:bg-whiteish hover:text-secondary hover:border-secondary text-black px-[130px] my-10 py-[8px] text-[24px] rounded-[8px]"
+          className="block mx-auto bg-whiteish hover:bg-secondary hover:text-whiteish text-secondary hover:border-secondary text-black px-[130px] my-10 py-[8px] text-[24px] rounded-[8px]"
         >
           Exit
         </button>

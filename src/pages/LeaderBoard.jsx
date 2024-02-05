@@ -3,6 +3,7 @@ import { firestore } from "../../firebase";
 import { collection, query, orderBy, getDocs } from "firebase/firestore";
 import arrow from "../assets/backarrow.png";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import SplashScreen from "../components/SplashScreen";
 
 const LeaderBoard = () => {
@@ -46,10 +47,10 @@ const LeaderBoard = () => {
       {loading ? (
         <SplashScreen />
       ) : (
-        <section className="bg-opaquebg text-whiteish">
+        <section className="bg-opaquebg h-screen text-whiteish">
           <div className="bg-mainbg py-5 px-5">
             <img
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/quiz-complete")}
               className="cursor-pointer"
               src={arrow}
               alt="back"
@@ -59,7 +60,7 @@ const LeaderBoard = () => {
             </h1>
           </div>
 
-          <div className=" w-[90%] mt-[-50px] bg-whiteish text-black mx-auto py-10 px-5 shadow-lg rounded-lg">
+          <div className=" w-[90%] mb-10 mt-[-50px] bg-whiteish text-black mx-auto py-10 px-5 shadow-lg rounded-lg">
             <h1 className="text-[20px] font-bold mb-5 text-center">
               Today's all-time high score
             </h1>
@@ -74,6 +75,12 @@ const LeaderBoard = () => {
               </div>
             ))}
           </div>
+          <NavLink
+            to="/"
+            className="bg-mainbg  flex rounded-lg my-10 w-[70%] text-[20px] hover:bg-secondary py-5 justify-center mx-auto shadow-lg"
+          >
+            Exit
+          </NavLink>
         </section>
       )}
     </>

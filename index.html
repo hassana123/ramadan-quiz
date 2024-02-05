@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta
+      name="description"
+      content="Increase your knowledge of the Deen during Ramadan with the Hallaly Ramadan Quiz website."
+    />
+    <link rel="icon" type="image/svg+xml" href="/moon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,7 +14,87 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title
+      title="Increase your knowledge of the Deen during Ramadan with the Hallaly Ramadan Quiz website."
+    >
+      Hallaly
+    </title>
+    <script>
+      // Check if the browser supports the Notification API
+      if ("Notification" in window) {
+        // Request permission for notifications
+        Notification.requestPermission().then(function (permission) {
+          if (permission === "granted") {
+            // Schedule notifications from March 11 to April 10, 2024
+            scheduleNotifications();
+          }
+        });
+      }
+
+      function scheduleNotifications() {
+        // Set the start date (March 11, 2024) and end date (April 10, 2024)
+        const startDate = new Date("february 5, 2024");
+        const endDate = new Date("April 10, 2024");
+
+        // Schedule notifications at 4:50 AM, 12:00 PM, and 8:30 PM
+        scheduleNotificationAtTime(4, 50, startDate, endDate);
+        scheduleNotificationAtTime(12, 0, startDate, endDate);
+        scheduleNotificationAtTime(20, 30, startDate, endDate);
+      }
+
+      function scheduleNotificationAtTime(hours, minutes, startDate, endDate) {
+        const today = new Date();
+        const scheduledTime = new Date(
+          today.getFullYear(),
+          today.getMonth(),
+          today.getDate(),
+          hours,
+          minutes
+        );
+
+        // Calculate the time until the first scheduled notification
+        let timeUntilNotification = scheduledTime - today;
+
+        if (timeUntilNotification < 0) {
+          // If the scheduled time has already passed today, schedule for the next day
+          timeUntilNotification += 24 * 60 * 60 * 1000; // 24 hours
+        }
+
+        // Set a timeout to show the first notification at the scheduled time
+        setTimeout(function () {
+          showNotification();
+
+          // Schedule subsequent notifications until the end date
+          scheduleDailyNotifications(hours, minutes, startDate, endDate);
+        }, timeUntilNotification);
+      }
+
+      function scheduleDailyNotifications(hours, minutes, startDate, endDate) {
+        // Calculate the time until the next scheduled notification
+        const timeUntilNotification = 24 * 60 * 60 * 1000; // 24 hours
+
+        // Set a timeout to show the notification at the scheduled time
+        const intervalId = setInterval(function () {
+          showNotification();
+
+          // Check if it's time to stop scheduling notifications
+          if (new Date() > endDate) {
+            clearInterval(intervalId);
+          }
+        }, timeUntilNotification);
+      }
+
+      function showNotification() {
+        // Notification content
+        const options = {
+          body: "It's time to play the Ramadan Quiz and increase your knowledge of the Deen!",
+          icon: "/vite.svg",
+        };
+
+        // Display the notification
+        new Notification("Daily Reminder", options);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
