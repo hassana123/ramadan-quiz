@@ -15,11 +15,10 @@ const dayFiveQuestions = [
     correctOption: 1,
   },
   {
-    question:
-      "Can Zakath be given to those whose debts are greater than their income or wealth?",
+    question: "Can Zakath be given to those who are in debt?",
     options: [
       "No, it is not permissible to give Zakath to people who are in debt",
-      "Yes, Zakath can be given to those whose debt is greater than their wealth",
+      "Yes, Zakath can be given to those who are in debt",
       "Zakath should not be given to any person",
       "None of the above",
     ],
@@ -27,7 +26,7 @@ const dayFiveQuestions = [
   },
   {
     question:
-      "What humanitarian and socio-political responsibility does Zakath encourage among Muslims?",
+      "How does Zakath encourage socio-political responsibility among Muslims?",
     options: [
       "Zakath encourages Muslims to organise social get-togethers and parties",
       "Zakath encourages Muslims to spend money in travelling to new places",
@@ -40,17 +39,6 @@ const dayFiveQuestions = [
     question: "How frequently do Muslims have to pay Zakath?",
     options: ["Yearly", "Half Yearly", "Quarterly", "Monthly"],
     correctOption: 0,
-  },
-  {
-    question:
-      "Can Zakath be given to those whose debts are greater than their income or wealth?",
-    options: [
-      "No, it is not permissible to give Zakath to people who are in debt",
-      "Yes, Zakath can be given to those whose debt is greater than their wealth",
-      "Zakath should not be given to any person",
-      "None of the above",
-    ],
-    correctOption: 1,
   },
   {
     question: "What is the meaning of Zakath?",
@@ -68,19 +56,21 @@ const dayFiveQuestions = [
     correctOption: 0,
   },
   {
-    question: "Who is obligated to pay Zakath?",
-    options: [
-      "Muslims who possess wealth more than the Nisab level for a period of one full lunar year",
-      "Zakath is obligatory for all Muslims",
-      "Zakath is only obligatory for business establishments",
-      "Zakath is not obligatory at all",
-    ],
-    correctOption: 0,
-  },
-  {
     question: "In which month did Zakat become obligatory?",
     options: ["Muharram", "Rajab", "Sha'ban", "Ramadan"],
     correctOption: 1,
+  },
+  {
+    question:
+      "What is the minimum threshold of wealth for Zakat to be obligatory?",
+    options: ["Nisab", "Fitr", "Sadqah", "Khums"],
+    correctOption: 0,
+  },
+  {
+    question:
+      "What is the term for the obligatory charity given before the Eid prayers?",
+    options: ["Sadaqah", "Amanah", "Zakat-ul-Fitr", "Lillah"],
+    correctOption: 2,
   },
 ];
 export default dayFiveQuestions;

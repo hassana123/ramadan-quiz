@@ -14,7 +14,7 @@ const QuizPage = () => {
   const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
   const [incorrectAnswersCount, setIncorrectAnswersCount] = useState(0);
   const [score, setScore] = useState(0);
-  const [timeRemaining, setTimeRemaining] = useState(300);
+  const [timeRemaining, setTimeRemaining] = useState(240);
 
   const navigate = useNavigate();
 
@@ -95,7 +95,7 @@ const QuizPage = () => {
         // Redirect to CompleteQuiz page
         navigate("/quiz-complete");
       }
-    }, 2000); // Delay for 2 seconds
+    }, 1000); // Delay for 2 seconds
   };
 
   // Save data to local storage

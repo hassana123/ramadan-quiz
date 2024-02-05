@@ -9,6 +9,7 @@ const CompleteQuiz = () => {
   const [save, setSave] = useState(false);
   const [userName, setUserName] = useState("");
   const [score, setScore] = useState(localStorage.getItem("score"));
+  const [saving, setSaving] = useState(false);
 
   const leaderB = () => {
     setSave(true);
@@ -19,7 +20,7 @@ const CompleteQuiz = () => {
       alert("Please enter your name");
       return;
     }
-
+    setSaving(true);
     try {
       // Add user score to Firestore LeaderBoard collection
       const leaderboardCollection = collection(firestore, "LeaderBoard");
@@ -28,9 +29,10 @@ const CompleteQuiz = () => {
         score: parseInt(score),
         timestamp: serverTimestamp(),
       });
-
+      setSaving(false);
       alert("Score saved successfully!");
-      navigate("/leaderboard"); // Redirect to the leaderboard page
+      navigate("/leaderboard");
+      // Redirect to the leaderboard page
     } catch (error) {
       console.error("Error saving score:", error);
       alert("Failed to save score. Please try again.");
@@ -112,10 +114,11 @@ const CompleteQuiz = () => {
                   type="text"
                 />
                 <button
+                  disabled={saving}
                   type="submit"
                   className="hover:bg-whiteish hover:text-secondary hover:border bg-secondary text-[18px] font-bold mx-10 my-5 w-[60%] text-whiteish py-3 rounded-[10px]"
                 >
-                  Save
+                  {saving ? "saving" : "save"}
                 </button>
               </form>
             </div>

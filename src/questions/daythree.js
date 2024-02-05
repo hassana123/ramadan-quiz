@@ -27,7 +27,7 @@ const dayThreeQuestions = [
   },
   {
     question:
-      "Which prayer does Allah mention in the Holy Quran to especially guard?",
+      "Which prayer does Allah mention in the Holy Quran as His most-favoured prayer?",
     options: [
       "Fajr Salah (pre-dawn prayers)",
       "Asar Salah (middle prayers)",
@@ -44,13 +44,13 @@ const dayThreeQuestions = [
       "By Saying Alhamdulillah (All praise is due to Allah)",
       "By Saying Allahu Akbar (By pronouncing the greatness of Almighty Allah)",
     ],
-    correctOption: 0,
+    correctOption: 3,
   },
   {
     question:
       "How many rakath (units of prayers) does a Muslim pray during the obligatory maghrib salah (prayers)?",
     options: ["Two rakath", "Three rakath", "Four rakath", "None of the above"],
-    correctOption: 2,
+    correctOption: 1,
   },
   {
     question:

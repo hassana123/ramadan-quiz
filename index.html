@@ -23,17 +23,21 @@
       // Check if the browser supports the Notification API
       if ("Notification" in window) {
         // Request permission for notifications
-        Notification.requestPermission().then(function (permission) {
-          if (permission === "granted") {
-            // Schedule notifications from March 11 to April 10, 2024
-            scheduleNotifications();
-          }
-        });
+        if (Notification.permission === "granted") {
+          // Schedule notifications from March 11 to April 10, 2024
+          scheduleNotifications();
+        } else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(function (permission) {
+            if (permission === "granted") {
+              scheduleNotifications();
+            }
+          });
+        }
       }
 
       function scheduleNotifications() {
         // Set the start date (March 11, 2024) and end date (April 10, 2024)
-        const startDate = new Date("february 5, 2024");
+        const startDate = new Date("March 11, 2024");
         const endDate = new Date("April 10, 2024");
 
         // Schedule notifications at 4:50 AM, 12:00 PM, and 8:30 PM
@@ -91,8 +95,15 @@
           icon: "/vite.svg",
         };
 
-        // Display the notification
-        new Notification("Daily Reminder", options);
+        // Check if the Notification constructor is available (Safari)
+        if ("Notification" in window && Notification.permission === "granted") {
+          new Notification("Daily Reminder", options);
+        } else if ("webkitNotification" in window) {
+          // For Safari < 6.1, use webkitNotifications
+          window.webkitNotifications
+            .createNotification(options.icon, "Daily Reminder", options.body)
+            .show();
+        }
       }
     </script>
   </head>

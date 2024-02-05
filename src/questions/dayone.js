@@ -21,7 +21,7 @@ const dayOneQuestions = [
     correctOption: 2,
   },
   {
-    question: "What is the pre-dawn meal known?",
+    question: "What is the pre-dawn meal known as?",
     options: ["Ifthar", "Suhoor", "Valimah", "None of the above"],
     correctOption: 1,
   },
