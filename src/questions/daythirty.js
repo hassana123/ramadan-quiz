@@ -29,12 +29,12 @@ const dayThirtyQuestions = [
       " Gulf Arabic",
       " Modern Standard Arabic",
     ],
-    correctOption: 3,
+    correctOption: 1,
   },
   {
     question: "How many letters are there in the Arabic alphabet?",
     options: ["22", "26", " 28", " 32"],
-    correctOption: 0,
+    correctOption: 2,
   },
   {
     question: "What is the direction of writing in the Arabic language?",
@@ -49,13 +49,13 @@ const dayThirtyQuestions = [
   {
     question:
       "What is the term for the Arabic script used in decorative writing and calligraphy?",
-    options: ["Naskh", "Thuluth", " Diwani", "Ruq’ah"],
-    correctOption: 2,
+    options: ["kufic & Naskh", "Thuluth & kufic", " Diwani", "Ruq’ah & Naskh"],
+    correctOption: 0,
   },
   {
     question: "How many grammatical cases are there in Arabic?",
     options: ["1", "2", "3", "4"],
-    correctOption: 0,
+    correctOption: 2,
   },
   {
     question: "Which Arabic term is used for the Islamic call to prayer?",
@@ -91,7 +91,7 @@ const dayThirtyQuestions = [
   },
   {
     question: "What is the Arabic term for 'peace be upon you'?",
-    options: [" Insha’Allah", " Salam aleikum", " Mabrook", " Ramadan Kareem"],
+    options: [" Insha’Allah", " Salam alaikum", " Mabrook", " Ramadan Kareem"],
     correctOption: 1,
   },
 ];

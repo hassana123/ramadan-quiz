@@ -16,9 +16,10 @@ const Share = () => {
     <div className="flex justify-center space-x-4 mb-10">
       {/* Twitter Share Button */}
       <TwitterShareButton
+        related={[""]}
         url={url}
         title={`🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! #RamadanQuiz \n`}
-        hashtags={["\n", "Hallaly", " RamadanQuiz", "HallalyQuiz"]}
+        hashtags={["\n", "Hallaly", "RamadanQuiz", "HallalyQuiz"]}
       >
         <XIcon className="rounded-lg" size={38} />
       </TwitterShareButton>

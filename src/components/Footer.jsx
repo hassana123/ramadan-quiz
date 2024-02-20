@@ -43,12 +43,12 @@ const Footer = () => {
             inspiring Ramadan Quiz”
           </p>
           <div className="flex gap-2 my-5 justify-center">
-            <a href="">
+            <a href="https://www.linkedin.com/in/hassana-abdullahi-858040240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               {" "}
               <img src={linkedln} alt="" />
             </a>
 
-            <a href="">
+            <a href="https://x.com/hassanaabdll1?t=uWKJeO22OEz-wf1SXJWUSA&s=09">
               {" "}
               <img src={twitter} alt="" />
             </a>
