@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import like from "../assets/like.png";
 import arrow from "../assets/backarrow.png";
+import Share from "./Share";
 import { firestore } from "../../firebase"; // Adjust the path to your Firebase configuration
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 const CompleteQuiz = () => {
@@ -10,9 +11,13 @@ const CompleteQuiz = () => {
   const [userName, setUserName] = useState("");
   const [score, setScore] = useState(localStorage.getItem("score"));
   const [saving, setSaving] = useState(false);
+  const [showSocials, setShowSocials] = useState(false);
 
   const leaderB = () => {
     setSave(true);
+  };
+  const handleShare = () => {
+    setShowSocials(!showSocials);
   };
   const onSave = async () => {
     // Validate user input
@@ -41,7 +46,7 @@ const CompleteQuiz = () => {
 
   return (
     <>
-      <main className="font-custom2 bg-mainbg p-2 w-full ">
+      <main className="font-custom2 bg-mainbg  h-screen p-2 w-full ">
         <img
           onClick={() => navigate("/quiz-home")}
           className="cursor-pointer"
@@ -79,9 +84,13 @@ const CompleteQuiz = () => {
           >
             Leader board
           </button>
-          <button className="block hover:bg-mainbg hover:text-whiteish text-[24px] mx-auto border-[#646161] border-[2px] shadow-md px-[24px] py-[8px] rounded-[8px] mb-10">
-            Share with Friend
+          <button
+            onClick={handleShare}
+            className="block hover:bg-mainbg hover:text-whiteish text-[24px] mx-auto border-[#646161] border-[2px] shadow-md px-[24px] py-[8px] rounded-[8px] mb-5"
+          >
+            {showSocials ? "Close" : "  Share with Friend"}
           </button>
+          {showSocials ? <Share /> : ""}
         </section>
         <button
           onClick={() => navigate("/")}
