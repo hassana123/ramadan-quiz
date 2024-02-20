@@ -47,7 +47,7 @@ const LeaderBoard = () => {
       {loading ? (
         <SplashScreen />
       ) : (
-        <section className="bg-opaquebg h-screen text-whiteish">
+        <section className="bg-opaquebg   text-whiteish">
           <div className="bg-mainbg py-5 px-5">
             <img
               onClick={() => navigate("/quiz-complete")}
@@ -60,7 +60,7 @@ const LeaderBoard = () => {
             </h1>
           </div>
 
-          <div className=" w-[90%] mb-10 mt-[-50px] bg-whiteish text-black mx-auto py-10 px-5 shadow-lg rounded-lg">
+          <div className=" w-[95%] mb-5 mt-[-50px] bg-whiteish text-black mx-auto py-10 px-5 shadow-lg rounded-lg">
             <h1 className="text-[20px] font-bold mb-5 text-center">
               Today's all-time high score
             </h1>
@@ -75,12 +75,15 @@ const LeaderBoard = () => {
               </div>
             ))}
           </div>
-          <NavLink
-            to="/"
-            className="bg-mainbg  flex rounded-lg my-10 w-[70%] text-[20px] hover:bg-secondary py-5 justify-center mx-auto shadow-lg"
-          >
-            Exit
-          </NavLink>
+
+          <div className="py-5">
+            <NavLink
+              to="/"
+              className="bg-mainbg flex rounded-lg  w-[70%] text-[20px] hover:bg-secondary py-5 justify-center mx-auto shadow-lg"
+            >
+              Exit
+            </NavLink>
+          </div>
         </section>
       )}
     </>

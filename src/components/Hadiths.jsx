@@ -67,7 +67,7 @@ const Hadiths = () => {
     settings.centerPadding = "25%";
   }
   return (
-    <section id="hadith" mb-20 className="text-black">
+    <section id="hadith" className="text-black">
       <h1 className="text-center text-[24px] font-bold text-secondary">
         {" "}
         Daily Hadith

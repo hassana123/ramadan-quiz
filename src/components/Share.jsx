@@ -2,10 +2,10 @@ import React from "react";
 import {
   TwitterShareButton,
   WhatsappShareButton,
-  InstapaperShareButton,
+  FacebookIcon,
   XIcon,
   WhatsappIcon,
-  InstapaperIcon,
+  FacebookShareButton,
 } from "react-share";
 
 const Share = () => {
@@ -26,19 +26,19 @@ const Share = () => {
       {/* Whatsapp Share Button */}
       <WhatsappShareButton
         url={url}
-        title={`/\n 🌙 I just scored ${quizScore} in today's Ramadan quiz on Hallaly! 🌟 Join me in the challenge and let's see who knows more about Ramadan! 🤓 #RamadanQuiz \n \n `}
+        title={`🌙 I just scored ${quizScore} in today's Ramadan quiz on Hallaly! 🌟 Join me in the challenge and let's see who knows more about Islam! 🤓 #RamadanQuiz \n \n `}
       >
         <WhatsappIcon className="rounded-lg" size={38} />
       </WhatsappShareButton>
 
       {/* Instapaper Share Button */}
-      <InstapaperShareButton
+      <FacebookShareButton
         url={url}
-        title={`\n🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! \n `}
-        description={`\n 🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! #RamadanQuiz #HallalyQuiz \n `}
+        hashtags={["\n", "Hallaly", " RamadanQuiz", "HallalyQuiz"]}
+        title={`🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! \n `}
       >
-        <InstapaperIcon className="rounded-lg" size={38} />
-      </InstapaperShareButton>
+        <FacebookIcon className="rounded-lg" size={38} />
+      </FacebookShareButton>
     </div>
   );
 };

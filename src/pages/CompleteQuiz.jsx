@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import like from "../assets/like.png";
 import arrow from "../assets/backarrow.png";
-import Share from "./Share";
+import Share from "../components/Share";
 import { firestore } from "../../firebase"; // Adjust the path to your Firebase configuration
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 const CompleteQuiz = () => {
@@ -46,7 +46,7 @@ const CompleteQuiz = () => {
 
   return (
     <>
-      <main className="font-custom2 bg-mainbg  h-screen p-2 w-full ">
+      <main className="font-custom2 bg-mainbg fit-content p-2 w-full ">
         <img
           onClick={() => navigate("/quiz-home")}
           className="cursor-pointer"
