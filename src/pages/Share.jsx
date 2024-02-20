@@ -17,8 +17,8 @@ const Share = () => {
       {/* Twitter Share Button */}
       <TwitterShareButton
         url={url}
-        title={` \n 🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! #RamadanQuiz \n`}
-        hashtags={["#Hallaly", " #RamadanQuiz", "#HallalyQuiz"]}
+        title={`🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! #RamadanQuiz \n`}
+        hashtags={["\n", "Hallaly", " RamadanQuiz", "HallalyQuiz"]}
       >
         <XIcon className="rounded-lg" size={38} />
       </TwitterShareButton>
@@ -26,7 +26,7 @@ const Share = () => {
       {/* Whatsapp Share Button */}
       <WhatsappShareButton
         url={url}
-        title={`/\n \n 🌙 I just scored ${quizScore} in today's Ramadan quiz on Hallaly! 🌟 Join me in the challenge and let's see who knows more about Ramadan! 🤓 #RamadanQuiz \n \n `}
+        title={`/\n 🌙 I just scored ${quizScore} in today's Ramadan quiz on Hallaly! 🌟 Join me in the challenge and let's see who knows more about Ramadan! 🤓 #RamadanQuiz \n \n `}
       >
         <WhatsappIcon className="rounded-lg" size={38} />
       </WhatsappShareButton>
@@ -34,7 +34,7 @@ const Share = () => {
       {/* Instapaper Share Button */}
       <InstapaperShareButton
         url={url}
-        title={`\n🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! `}
+        title={`\n🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! \n `}
         description={`\n 🌙 Just aced the Ramadan Quiz on Hallaly with a score of ${quizScore}! 🌟 Join the fun and test your knowledge! #RamadanQuiz #HallalyQuiz \n `}
       >
         <InstapaperIcon className="rounded-lg" size={38} />
