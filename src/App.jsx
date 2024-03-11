@@ -61,7 +61,7 @@ function App() {
   useEffect(() => {
     scheduleReminders();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [interval]); // Run only once on component mount
+  }, []); // Run only once on component mount
 
   return (
     <>
