@@ -36,7 +36,8 @@ const CompleteQuiz = () => {
       });
       setSaving(false);
       alert("Score saved successfully!");
-      navigate("/leaderboard");
+      //navigate("/leaderboard");
+      setSave(true);
       // Redirect to the leaderboard page
     } catch (error) {
       console.error("Error saving score:", error);
