@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-around font-600 py-1 shadow-md border-b border-b-[2px]  bg-mainbg">
+    <nav className="flex justify-between px-10  font-600 py-1 shadow-md border-b border-b-[2px]  bg-mainbg">
       <div className=" ">
         <img className="w-[20px] " src={moon} alt="logo" />
         <span className="text-[14px] font-400 font-custom  text-secondary">
@@ -42,23 +42,23 @@ const Navbar = () => {
         <div className="w-6 h-[2px] bg-secondary"></div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-whiteish absolute top-[-1%] w-[60%] right-[0%] text-secondary text-center mt-2 ">
+        <div className="md:hidden bg-whiteish absolute top-[6%] w-[60%] right-[0%] text-secondary text-center mt-2 ">
           <NavLink
-            className="block py-2 hover:bg-secondary hover:text-blacka mt-20"
+            className="block py-2 hover:bg-secondary hover:text-[#fff] mt-20"
             to="/leaderboard"
             onClick={toggleMenu}
           >
             Leader Board
           </NavLink>
           <a
-            className="block py-2 hover:bg-secondary hover:text-black my-5"
+            className="block py-2 hover:bg-secondary hover:text-[#fff] my-5"
             href="/#hadith"
             onClick={toggleMenu}
           >
             Daily Hadith
           </a>
           <NavLink
-            className="block py-2 hover:bg-secondary hover:text-black my-5"
+            className="block py-2 hover:bg-secondary  hover:text-[#fff] my-5"
             to="/quiz-home"
             onClick={toggleMenu}
           >

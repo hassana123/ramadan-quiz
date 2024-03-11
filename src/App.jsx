@@ -27,7 +27,7 @@ function App() {
   // Function to schedule reminders
   const scheduleReminders = () => {
     // Set the start and end dates for reminders
-    const startDate = new Date("2024-03-11T08:00:00");
+    const startDate = new Date("2024-03-01T08:00:00");
     const endDate = new Date("2024-04-10T20:30:00");
 
     // Set the interval for reminders (every day)
@@ -61,7 +61,7 @@ function App() {
   useEffect(() => {
     scheduleReminders();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Run only once on component mount
+  }, [interval]); // Run only once on component mount
 
   return (
     <>

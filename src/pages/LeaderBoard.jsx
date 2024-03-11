@@ -50,7 +50,7 @@ const LeaderBoard = () => {
         <section className="bg-opaquebg   text-whiteish">
           <div className="bg-mainbg py-5 px-5">
             <img
-              onClick={() => navigate("/quiz-complete")}
+              onClick={() => navigate("/")}
               className="cursor-pointer"
               src={arrow}
               alt="back"
