@@ -3,17 +3,18 @@ import { firestore } from "../../firebase";
 import { collection, query, orderBy, getDocs } from "firebase/firestore";
 import arrow from "../assets/backarrow.png";
 import { useNavigate } from "react-router-dom";
+import { isToday, fromUnixTime } from "date-fns";
 import { NavLink } from "react-router-dom";
 import SplashScreen from "../components/SplashScreen";
 
 const LeaderBoard = () => {
   const navigate = useNavigate();
   const [leaderboardData, setLeaderboardData] = useState([]);
+  const [dayboardData, setDayboardData] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchLeaderboardData = async () => {
       try {
-        // Reference to the leaderboard collection
         const leaderboardCollectionRef = collection(firestore, "LeaderBoard");
 
         // Query to get the leaderboard data, ordered by score in descending order
@@ -29,9 +30,25 @@ const LeaderBoard = () => {
         // Extract the data from the snapshot
         const data = leaderboardSnapshot.docs.map((doc) => doc.data());
 
-        // Update the state with the fetched data
         setLeaderboardData(data);
-        //console.log(data);
+
+        const todayScores = data.filter((entry) => {
+          let entryDate;
+
+          if (entry.timestamp && entry.timestamp.seconds) {
+            entryDate = fromUnixTime(entry.timestamp.seconds);
+          } else if (entry.timestamp instanceof Date) {
+            entryDate = entry.timestamp;
+          } else {
+            console.error("Unsupported timestamp format:", entry.timestamp);
+            return false;
+          }
+
+          return isToday(entryDate);
+        });
+
+        setDayboardData(todayScores);
+
         setLoading(false);
       } catch (error) {
         console.error("Error fetching leaderboard data:", error);
@@ -41,6 +58,39 @@ const LeaderBoard = () => {
     // Call the function to fetch leaderboard data
     fetchLeaderboardData();
   }, []);
+  console.log(leaderboardData);
+
+  // useEffect(() => {
+  //   const fetchLeaderboardData = async () => {
+  //     try {
+  //       // Reference to the leaderboard collection
+  //       const leaderboardCollectionRef = collection(firestore, "LeaderBoard");
+
+  //       // Query to get the leaderboard data, ordered by score in descending order
+  //       const leaderboardQuery = query(
+  //         leaderboardCollectionRef,
+  //         orderBy("score", "desc"),
+  //         orderBy("timestamp", "desc")
+  //       );
+
+  //       // Execute the query and get the snapshot
+  //       const leaderboardSnapshot = await getDocs(leaderboardQuery);
+
+  //       // Extract the data from the snapshot
+  //       const data = leaderboardSnapshot.docs.map((doc) => doc.data());
+
+  //       // Update the state with the fetched data
+  //       setLeaderboardData(data);
+  //       //console.log(data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching leaderboard data:", error);
+  //     }
+  //   };
+
+  //   // Call the function to fetch leaderboard data
+  //   fetchLeaderboardData();
+  // }, []);
 
   return (
     <>
@@ -65,8 +115,11 @@ const LeaderBoard = () => {
               Today's all-time high score
             </h1>
             {/* Display leaderboard data */}
-            {leaderboardData.map((entry, index) => (
-              <div className="flex capitalize font-bold my-3 rounded-[8px] border py-3 px-5 justify-between">
+            {dayboardData.map((entry, index) => (
+              <div
+                key={index}
+                className="flex capitalize font-bold my-3 rounded-[8px] border py-3 px-5 justify-between"
+              >
                 <div className="flex gap-4">
                   <h1>{index + 1}</h1>
                   <h1> {entry.name}</h1>

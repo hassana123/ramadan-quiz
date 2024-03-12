@@ -1,10 +1,21 @@
 import React, { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import like from "../assets/like.png";
 import arrow from "../assets/backarrow.png";
 import Share from "../components/Share";
 import { firestore } from "../../firebase"; // Adjust the path to your Firebase configuration
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  updateDoc,
+  serverTimestamp,
+  query,
+  where,
+  limit,
+  getDocs,
+} from "firebase/firestore";
+
 const CompleteQuiz = () => {
   const navigate = useNavigate();
   const [save, setSave] = useState(false);
@@ -19,29 +30,90 @@ const CompleteQuiz = () => {
   const handleShare = () => {
     setShowSocials(!showSocials);
   };
+  // const onSave = async () => {
+  //   // Validate user input
+  //   if (!userName.trim()) {
+  //     alert("Please enter your name");
+  //     return;
+  //   }
+  //   setSaving(true);
+  //   try {
+  //     // Add user score to Firestore LeaderBoard collection
+  //     const leaderboardCollection = collection(firestore, "LeaderBoard");
+  //     await addDoc(leaderboardCollection, {
+  //       name: userName,
+  //       score: parseInt(score),
+  //       timestamp: serverTimestamp(),
+  //     });
+  //     alert("Score saved successfully!");
+  //     //navigate("/leaderboard");
+  //     setSave(false);
+  //     // Redirect to the leaderboard page
+  //   } catch (error) {
+  //     console.error("Error saving score:", error);
+  //     alert("Failed to save score. Please try again.");
+  //   }
+  // };
   const onSave = async () => {
     // Validate user input
     if (!userName.trim()) {
       alert("Please enter your name");
       return;
     }
+
     setSaving(true);
+
     try {
-      // Add user score to Firestore LeaderBoard collection
+      // Reference to the LeaderBoard collection
       const leaderboardCollection = collection(firestore, "LeaderBoard");
-      await addDoc(leaderboardCollection, {
-        name: userName,
-        score: parseInt(score),
-        timestamp: serverTimestamp(),
-      });
-      setSaving(false);
-      alert("Score saved successfully!");
-      //navigate("/leaderboard");
+
+      // Query to check if the user already exists in the LeaderBoard
+      const userQuery = query(
+        leaderboardCollection,
+        where("name", "==", userName),
+        limit(1)
+      );
+
+      const userSnapshot = await getDocs(userQuery);
+
+      if (userSnapshot.size > 0) {
+        // User already exists, check the score and update if necessary
+        const existingUser = userSnapshot.docs[0].data();
+        const existingScore = existingUser.score;
+
+        if (
+          parseInt(score) > existingScore ||
+          parseInt(score) < existingScore
+        ) {
+          // Update the existing entry with the new score
+          await updateDoc(userSnapshot.docs[0].ref, {
+            score: parseInt(score),
+            timestamp: serverTimestamp(),
+          });
+          alert("Score updated successfully!");
+        } else {
+          await updateDoc(userSnapshot.docs[0].ref, {
+            score: parseInt(score),
+            timestamp: serverTimestamp(),
+          });
+          alert("Updated!!! Same Score as Last Time !");
+        }
+      } else {
+        // User doesn't exist, create a new entry
+        await addDoc(leaderboardCollection, {
+          name: userName,
+          score: parseInt(score),
+          timestamp: serverTimestamp(),
+        });
+        alert("Score saved successfully!");
+      }
+
       setSave(false);
-      // Redirect to the leaderboard page
     } catch (error) {
       console.error("Error saving score:", error);
       alert("Failed to save score. Please try again.");
+    } finally {
+      setSaving(false);
     }
   };
 
