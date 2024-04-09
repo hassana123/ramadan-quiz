@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import React from "react";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Navbar from "../components/Navbar";

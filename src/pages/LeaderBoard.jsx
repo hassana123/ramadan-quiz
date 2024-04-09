@@ -226,20 +226,25 @@ const LeaderBoard = () => {
         <SplashScreen />
       ) : (
         <section className="bg-opaquebg text-whiteish">
-          <div className="bg-mainbg py-5 px-2">
-            <img
-              onClick={() => navigate("/")}
-              className="cursor-pointer"
-              src={arrow}
-              alt="back"
-            />
-            <h1 className="text-center font-custom text-secondary font-bold my-5 mb-10 md:text-[35px] text-[24px]">
-              HALL OF FAME
-            </h1>
-            <ReactConfetti width={dimension.width} height={170}></ReactConfetti>
+          <div className="h-[200px] relative z-[10]">
+            <div className="bg-mainbg py-5 px-2 fixed z-[10] w-[100%] h-[200px]">
+              <img
+                onClick={() => navigate("/")}
+                className="cursor-pointer"
+                src={arrow}
+                alt="back"
+              />
+              <h1 className="text-center font-custom text-secondary font-bold my-5 mb-10 md:text-[35px] text-[24px]">
+                HALL OF FAME
+              </h1>
+              <ReactConfetti
+                width={dimension.width}
+                height={195}
+              ></ReactConfetti>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-[95%] mx-auto">
+          <div className="grid grid-cols-1 z-0 md:grid-cols-2 lg:grid-cols-3 gap-5 w-[95%] mx-auto my-5">
             {leaderboardData.map((entry, index) => (
               <div
                 key={index}
