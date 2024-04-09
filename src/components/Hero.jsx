@@ -9,7 +9,7 @@ const Hero = () => {
 
         <div>
           <p className="md:text-[54px] my-10 font-custom font-[700]  text-secondary">
-            EID MUBARK IN ADVANCE{" "}
+            EID MUBARAK
           </p>
           <NavLink
             className="bg-secondary py-[15px] md:px-[60px] px-[40px] shadow-md hover:bg-whiteish hover:text-secondary rounded-[24px]"
