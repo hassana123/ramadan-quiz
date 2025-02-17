@@ -3,24 +3,26 @@ import { onMessage, getToken } from "firebase/messaging";
 import { messaging } from "../../firebase"; 
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner"; 
-import logo from "../../public/moon.svg";
 
 async function subscribeToTopic(token) {
-    try {
-      await fetch("https://ramadan-quiz-backend.vercel.app/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
-      console.log("Subscribed to Ramadan updates!");
-    } catch (error) {
-      console.error("Subscription failed:", error);
+    if (!localStorage.getItem("subscribedToTopic")) {
+        try {
+            await fetch("https://ramadan-quiz-backend.vercel.app/subscribe", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ token }),
+            });
+            console.log("Subscribed to Ramadan updates!");
+            localStorage.setItem("subscribedToTopic", "true");
+        } catch (error) {
+            console.error("Subscription failed:", error);
+        }
     }
-  }
+}
+
 async function getNotificationPermissionAndToken() {
   if (!("Notification" in window)) {
     console.info("This browser does not support desktop notifications.");
-    alert("No support for notifications.");
     return null;
   }
 
@@ -51,7 +53,7 @@ async function fetchToken() {
     if (token) {
       localStorage.setItem("fcmToken", token);
       console.log("FCM Token:", token);
-      await subscribeToTopic(token)
+      await subscribeToTopic(token);
       return token;
     } else {
       console.warn("No FCM token received.");
@@ -78,7 +80,6 @@ const useFcmToken = () => {
 
     if (Notification.permission === "denied") {
       setNotificationPermissionStatus("denied");
-      console.info("Push Notifications issue - permission denied.");
       isLoading.current = false;
       return;
     }
@@ -86,7 +87,6 @@ const useFcmToken = () => {
     if (!tokon) {
       if (retryLoadToken.current >= 3) {
         alert("Unable to load FCM token. Please refresh your browser.");
-        console.info("Push Notifications issue - unable to load token after 3 retries.");
         isLoading.current = false;
         return;
       }
@@ -118,8 +118,9 @@ const useFcmToken = () => {
         if (Notification.permission !== "granted") return;
 
         console.log("Foreground push notification received:", payload);
-        const link = payload.fcmOptions?.link || payload.data?.link;
+        const link = payload.data?.link;
 
+        // ✅ Display only using toast (Remove `new Notification(...)`)
         toast(`${payload.notification?.title}: ${payload.notification?.body}`, {
           description: payload.notification?.body,
           action: link
@@ -132,24 +133,6 @@ const useFcmToken = () => {
             : undefined,
           duration: 10000, // Stay visible for 10 seconds
         });
-
-        const n = new Notification(payload.notification?.title || "New message", {
-          body: payload.notification?.body || "This is a new message",
-          icon: logo,
-          data: link ? { url: link } : undefined,
-        });
-
-        n.onclick = (event) => {
-          event.preventDefault();
-          const link = event.target.data?.url;
-          if (link) {
-            navigate(link);
-          } else {
-            console.log("No link found in the notification payload.");
-          }
-        };
-
-        console.log(n);
       });
 
       return unsubscribe;
@@ -165,7 +148,7 @@ const useFcmToken = () => {
     return () => {
       if (unsubscribe) unsubscribe();
     };
-  }, [token, navigate, toast]);
+  }, [token, navigate]);
 
   return { token, notificationPermissionStatus };
 };

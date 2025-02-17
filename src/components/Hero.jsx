@@ -22,7 +22,7 @@ const Hero = () => {
   
         {/* Play Quiz Button */}
         <NavLink
-          className=" block  lg:w-[30%] w-[70%] md:w-[80%] mx-auto bg-secondary py-5 text-center mt-5  shadow-md hover:bg-whiteish hover:text-secondary rounded-[24px] transition duration-300 ease-in-out"
+          className=" block  lg:w-[30%] w-[70%] md:w-[90%] mx-auto bg-secondary py-5 text-center mt-5  shadow-md hover:bg-whiteish hover:text-secondary rounded-[24px] transition duration-300 ease-in-out"
           to="/quiz-home"
         >
           Play Quiz & Learn More

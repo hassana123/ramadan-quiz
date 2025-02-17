@@ -12,14 +12,43 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// Handle background messages
+// ✅ Handle background messages properly
 messaging.onBackgroundMessage((payload) => {
   console.log("Received background message ", payload);
-  const notificationTitle = payload.notification.title;
+
+  const notificationTitle = payload.notification?.title || "New Notification";
+  const notificationBody = payload.notification?.body || "You have a new message.";
+  const notificationIcon = "/moon.svg";
+  const clickAction = payload.data?.link || "https://hallaly.vercel.app/"; // ✅ Ensure link is present
+
   const notificationOptions = {
-    body: payload.notification.body,
-    icon: "/moon.svg",
+    body: notificationBody,
+    icon: notificationIcon,
+    data: { url: clickAction }, // ✅ Ensure link is stored in data
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
+});
+
+// ✅ Handle notification click event to open the link
+self.addEventListener("notificationclick", (event) => {
+  console.log("Notification clicked: ", event.notification);
+
+  event.notification.close();
+
+  const notificationData = event.notification.data;
+  if (notificationData && notificationData.url) {
+    event.waitUntil(
+      clients
+        .matchAll({ type: "window", includeUncontrolled: true })
+        .then((clientList) => {
+          for (const client of clientList) {
+            if (client.url === notificationData.url && "focus" in client) {
+              return client.focus();
+            }
+          }
+          return clients.openWindow(notificationData.url);
+        })
+    );
+  }
 });

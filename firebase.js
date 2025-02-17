@@ -20,28 +20,28 @@ const firestore = getFirestore(app);
 const messaging = getMessaging(app);
 
 export { auth, firestore, messaging };
-export const requestPermission = async () => {
-  try {
-    const permission = await Notification.requestPermission();
-    if (permission === "granted") {
-      console.log("Notification permission granted.");
-      const swRegistration = await navigator.serviceWorker.register("./firebase-messaging-sw.js");
+// export const requestPermission = async () => {
+//   try {
+//     const permission = await Notification.requestPermission();
+//     if (permission === "granted") {
+//       console.log("Notification permission granted.");
+//       const swRegistration = await navigator.serviceWorker.register("./firebase-messaging-sw.js");
 
-      const token = await getToken(messaging, {
-        vapidKey: "BGf717ZumEktI_rmuHzzhezh2AbYKye5CFVCDfYvaMHUz5q41QYVolCdS0m46BjocPlpaYOuEum-c-xF8IFarRI",
-        serviceWorkerRegistration: swRegistration,
-      });
-      console.log("FCM Token:", token);
-      return token;
-    } else {
-      console.log("Notification permission denied.");
-    }
-  } catch (error) {
-    console.error("Error getting notification permission:", error);
-  }
-};
+//       const token = await getToken(messaging, {
+//         vapidKey: "BGf717ZumEktI_rmuHzzhezh2AbYKye5CFVCDfYvaMHUz5q41QYVolCdS0m46BjocPlpaYOuEum-c-xF8IFarRI",
+//         serviceWorkerRegistration: swRegistration,
+//       });
+//       console.log("FCM Token:", token);
+//       return token;
+//     } else {
+//       console.log("Notification permission denied.");
+//     }
+//   } catch (error) {
+//     console.error("Error getting notification permission:", error);
+//   }
+// };
 
 // Handle foreground messages
-onMessage(messaging, (payload) => {
-  console.log("Message received:", payload);
-});
+// onMessage(messaging, (payload) => {
+//   console.log("Message received:", payload);
+// });
