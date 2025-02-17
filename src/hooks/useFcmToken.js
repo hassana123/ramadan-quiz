@@ -64,7 +64,7 @@ async function fetchToken() {
     return null;
   }
 }
-
+localStorage.clear("")
 const useFcmToken = () => {
   const navigate = useNavigate();
   const [notificationPermissionStatus, setNotificationPermissionStatus] = useState(null);
