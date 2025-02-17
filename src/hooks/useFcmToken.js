@@ -7,7 +7,7 @@ import logo from "../../public/moon.svg";
 
 async function subscribeToTopic(token) {
     try {
-      await fetch("http://localhost:5000/subscribe", {
+      await fetch("https://ramadan-quiz-backend.vercel.app/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token }),
