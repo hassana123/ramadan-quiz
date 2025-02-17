@@ -51,7 +51,7 @@ async function fetchToken() {
     });
 
     if (token) {
-      localStorage.setItem("fcmToken", token);
+      localStorage.setItem("FCMToken", token);
       console.log("FCM Token:", token);
       await subscribeToTopic(token);
       return token;
@@ -64,13 +64,13 @@ async function fetchToken() {
     return null;
   }
 }
-localStorage.clear()
-console.log(localStorage.getItem("FCM Token"));
+// localStorage.clear()
+// console.log(localStorage.getItem("FCM Token"));
 
 const useFcmToken = () => {
   const navigate = useNavigate();
   const [notificationPermissionStatus, setNotificationPermissionStatus] = useState(null);
-  const [token, setToken] = useState(localStorage.getItem("fcmToken"));
+  const [token, setToken] = useState(localStorage.getItem("FCMToken"));
   const retryLoadToken = useRef(0);
   const isLoading = useRef(false);
 
