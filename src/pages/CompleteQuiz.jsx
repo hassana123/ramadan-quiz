@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
 import like from "../assets/like.png";
@@ -30,30 +30,7 @@ const CompleteQuiz = () => {
   const handleShare = () => {
     setShowSocials(!showSocials);
   };
-  // const onSave = async () => {
-  //   // Validate user input
-  //   if (!userName.trim()) {
-  //     alert("Please enter your name");
-  //     return;
-  //   }
-  //   setSaving(true);
-  //   try {
-  //     // Add user score to Firestore LeaderBoard collection
-  //     const leaderboardCollection = collection(firestore, "LeaderBoard");
-  //     await addDoc(leaderboardCollection, {
-  //       name: userName,
-  //       score: parseInt(score),
-  //       timestamp: serverTimestamp(),
-  //     });
-  //     alert("Score saved successfully!");
-  //     //navigate("/leaderboard");
-  //     setSave(false);
-  //     // Redirect to the leaderboard page
-  //   } catch (error) {
-  //     console.error("Error saving score:", error);
-  //     alert("Failed to save score. Please try again.");
-  //   }
-  // };
+  
   const onSave = async () => {
     // Validate user input
     if (!userName.trim()) {
@@ -116,6 +93,56 @@ const CompleteQuiz = () => {
       setSaving(false);
     }
   };
+  const [streak, setStreak] = useState(0);
+  const [milestone, setMilestone] = useState("");
+
+  useEffect(() => {
+    trackStreak();
+  }, []);
+
+  const trackStreak = () => {
+    const today = new Date().toDateString();
+    const lastQuizDate = localStorage.getItem("lastQuizDate");
+    let currentStreak = parseInt(localStorage.getItem("streak")) || 0;
+
+    if (lastQuizDate === today) {
+      return; // Avoid increasing streak multiple times in a day
+    }
+
+    if (lastQuizDate) {
+      const lastDate = new Date(lastQuizDate);
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+
+      if (lastDate.toDateString() === yesterday.toDateString()) {
+        currentStreak += 1;
+      } else {
+        currentStreak = 1; // Reset if missed a day
+      }
+    } else {
+      currentStreak = 1; // First time playing
+    }
+
+    localStorage.setItem("streak", currentStreak);
+    localStorage.setItem("lastQuizDate", today);
+    setStreak(currentStreak);
+
+    checkMilestone(currentStreak);
+  };
+
+  const checkMilestone = (streak) => {
+    if (streak === 3) {
+      setMilestone("🔥 3-Day Streak! You're on fire!");
+    } else if (streak === 7) {
+      setMilestone("🏆 7-Day Streak! You're a Ramadan Quiz Champion!");
+    } else if (streak === 14) {
+      setMilestone("🌟 14-Day Streak! Amazing Dedication!");
+    } else if (streak === 30) {
+      setMilestone("🎉 30-Day Streak! You completed the whole month!");
+    } else {
+      setMilestone("");
+    }
+  };
 
   return (
     <>
@@ -129,10 +156,21 @@ const CompleteQuiz = () => {
         <section className="text-center p-1 bg-whiteish rounded-[16px] shadow-md w-[98%] mt-[100px] mx-auto text-black">
           <img className="mx-auto mt-[-90px]" src={like} alt="like" />
           <h1 className="mb-3 mt-[-15px] text-[36px] font-700">Masha Allah</h1>
+          <div className="flex items-center justify-center gap-2">
           <div className="bg-mainbg text-whiteish py-2 px-5 mb-5 rounded-[16px] font-600 inline-block">
             <h1 className="text-[48px]">{localStorage.getItem("score")}</h1>
             <span>Your Score</span>
           </div>
+           {/* 🔥 Streak Display */}
+           <div className="bg-secondary text-whiteish py-2 px-5 mb-5 rounded-[16px] font-600 inline-block">
+            <h1 className="text-[48px]">{streak} 🔥</h1>
+            <span>Day Streak</span>
+          </div>
+          </div>
+
+          {/* 🎉 Milestone Message */}
+          {milestone && <p className="text-[20px] font-bold text-highlight">{milestone}</p>}
+
           <div className="flex justify-center space-x-2 mb-8">
             <div className="bg-secondary font-600 p-4 rounded-[8px] text-whiteish">
               <h1 className="text-[24px]">{localStorage.getItem("totalQ")}</h1>

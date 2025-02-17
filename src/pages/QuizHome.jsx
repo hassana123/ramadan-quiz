@@ -16,7 +16,7 @@ const QuizHome = () => {
 
   useEffect(() => {
     // Set the start date as March 11, 2024
-    const startDate = new Date("2024-03-11");
+    const startDate = new Date("2025-03-01");
 
     // Fetch the current date
     const currentDate = new Date();
@@ -37,7 +37,7 @@ const QuizHome = () => {
   };
   return (
     <>
-      <Navbar />
+   
       <main className="font-custom2 bg-mainbg w-full h-screen p-2">
         <img
           src={arrow}
