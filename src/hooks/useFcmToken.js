@@ -118,7 +118,7 @@ const useFcmToken = () => {
         if (Notification.permission !== "granted") return;
 
         console.log("Foreground push notification received:", payload);
-        const link = payload.data?.link;
+        const link = payload.fcmOptions?.link || payload.data?.link;
 
         // ✅ Display only using toast (Remove `new Notification(...)`)
         toast(`${payload.notification?.title}: ${payload.notification?.body}`, {
