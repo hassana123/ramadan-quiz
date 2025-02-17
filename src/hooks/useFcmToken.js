@@ -65,6 +65,8 @@ async function fetchToken() {
   }
 }
 localStorage.clear()
+console.log(localStorage.getItem("FCM Token"));
+
 const useFcmToken = () => {
   const navigate = useNavigate();
   const [notificationPermissionStatus, setNotificationPermissionStatus] = useState(null);
