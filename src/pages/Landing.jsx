@@ -5,6 +5,7 @@ import Hadiths from "../components/Hadiths";
 import TopFive from "../components/TopFive";
 import Extras from "../components/Extras";
 import DeedOfTheDay from "../components/DeedOfTheDay";
+import QuranTracker from "../components/Qurantracker";
 // import Confetti from "react-dom-confetti";
 // import ReactConfetti from "react-confetti";
 const Landing = () => {
@@ -25,6 +26,7 @@ const Landing = () => {
     <main className="bg-whiteish font-custom2 relative">
      
       <Hero />
+      <QuranTracker/>
       <DeedOfTheDay/>
       <Features />
       <Hadiths />
