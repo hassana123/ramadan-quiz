@@ -18,13 +18,13 @@ messaging.onBackgroundMessage((payload) => {
 
   const notificationTitle = payload.notification?.title || "New Notification";
   const notificationBody = payload.notification?.body || "You have a new message.";
-  const notificationIcon = "/moon.svg";
-  const clickAction = payload.data?.link || "https://hallaly.vercel.app/"; // ✅ Ensure link is present
+  const notificationIcon = "./moon.svg";
+  const url = payload.data?.link || "https://hallaly.vercel.app/"; // ✅ Ensure link is present
 
   const notificationOptions = {
     body: notificationBody,
     icon: notificationIcon,
-    data: { url: clickAction }, // ✅ Ensure link is stored in data
+    data: { url: url }, 
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
