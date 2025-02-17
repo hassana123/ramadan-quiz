@@ -20,7 +20,8 @@ function App() {
       console.log("FCM Token:", token);
     }
   }, [token]);
-  
+//  localStorage.clear()
+
   // useEffect(() => {
   //   requestPermission();
   // }, []);
