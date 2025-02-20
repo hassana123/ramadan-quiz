@@ -53,7 +53,7 @@ const QuranTracker = () => {
   const progressPercentage = Math.floor((completedSurahs.length / TOTAL_SURAHS) * 100);
 
   return (
-    <section className="bg-white shadow-lg p-6 rounded-2xl text-black w-[90%] mx-auto my-5 relative">
+    <section className="bg-white shadow-lg p-6 rounded-2xl text-black w-[95%] mx-auto my-5 relative">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-10 rounded-2xl pointer-events-none"></div>
 
@@ -75,7 +75,7 @@ const QuranTracker = () => {
 
       {/* Reading Plan Calculator */}
        
-      <div className="p-5 rounded-xl md:w-[50%] w-[60%] shadow-md mb-5 bg-gray-100">
+      <div className="p-5 rounded-xl md:w-[50%] w-full shadow-md mb-5 bg-gray-100">
       {/* Header with Expand/Collapse */}
       <div
         className="flex justify-between items-center cursor-pointer"
