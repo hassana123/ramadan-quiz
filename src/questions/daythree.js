@@ -153,67 +153,6 @@ const dayThreeQuestions = [
   }
 ];
 
-const dayFourQuestions = [
-  {
-    question: "When Ramadan comes, which of the gates are opened?",
-    options: ["Gates of Jannah", "Gates of Mercy", "Gates of Makkah", "Gates of Hell"],
-    correctOption: 0,
-    justification: "When the month of Ramadan starts, the gates of Heaven are opened and the gates of Hell are closed. (Bukhari 1899)"
-  },
-  {
-    question: "What is Az-Zaqqum?",
-    options: ["Food for the people of Hellfire", "Drink for the people of Hellfire", "Home for the people of Hellfire", "Clothes for the people of Hellfire"],
-    correctOption: 0,
-    justification: "Then indeed you, O those astray, will be eating from trees of zaqqum. (Quran 56:51-52)"
-  },
-  {
-    question: "What is Sidrat al-Muntaha?",
-    options: ["Food for the people of Jannah", "An olive tree of the farthest boundary", "A lote tree of the farthest boundary", "A drink for the people of Jannah"],
-    correctOption: 2,
-    justification: "Near Sidrat al-Muntaha (the lote tree of the utmost boundary, beyond which none can pass). (Quran 53:13-16)"
-  },
-  {
-    question: "Which is NOT one of the rights of a Muslim upon another Muslim?",
-    options: ["If one invites, you accept it", "If one dies, you attend the funeral", "If one asks for advice, you give sincerely", "If one asks for money, you give"],
-    correctOption: 3,
-    justification: "The five rights are returning salaam, visiting the sick, attending funerals, accepting invitations, and saying 'yarhamuk Allah' when one sneezes. (Bukhari 1240, Muslim 2162)"
-  },
-  {
-    question: "Which uncle of Prophet Muhammad (SAW) didn’t accept Islam?",
-    options: ["Abdul Muttalib", "Hamza", "Abu Lahab", "Al-Abbas"],
-    correctOption: 2,
-    justification: "'Perished be the hands of Abu Lahab and ruined he be.' (Quran 111:1-5)"
-  },
-  {
-    question: "What are you NOT allowed to do in Sujood?",
-    options: ["Make dua in Arabic", "Recite Qur’an", "Recite adhkar"],
-    correctOption: 1,
-    justification: "The Prophet ﷺ said: 'I have been forbidden to recite the Quran in the state of bowing and prostration.' (Muslim)"
-  },
-  {
-    question: "Reciting Surah Fatiha in each rakat of the Salah is…?",
-    options: ["Optional", "Encouraged", "Not necessary", "Mandatory"],
-    correctOption: 3,
-    justification: "The Prophet ﷺ said: 'There is no prayer for the one who does not recite al-Fatiha.' (Bukhari 714)"
-  },
-  {
-    question: "In Sujood, which body part should NOT be touching the ground?",
-    options: ["Forearms", "Nose", "Feet", "Hands"],
-    correctOption: 0,
-    justification: "The Prophet ﷺ said: 'Be straight in prostration and let none of you put his forearms on the ground like a dog.' (Bukhari 788, Muslim 493)"
-  },
-  {
-    question: "Allah says, with His knowledge, He is closer to us than our…?",
-    options: ["Thoughts", "Heart", "Jugular Vein", "Blood"],
-    correctOption: 2,
-    justification: "'We are closer to him than his jugular vein.' (Quran 50:16)"
-  },
-  {
-    question: "Eating Suhoor (Predawn meal) is…?",
-    options: ["Sunnah", "Waajib", "Permissible", "Makrooh"],
-    correctOption: 0,
-    justification: "Take a meal a little before dawn, for there is a blessing in taking a meal at that time. (Muslim 1095)"
-  }
-];
+
 
 export default  dayThreeQuestions
