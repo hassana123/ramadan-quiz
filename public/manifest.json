@@ -1,0 +1,22 @@
+{
+    "name": "Ramadan Quiz 2025",
+    "short_name": "Ramadan Quiz",
+    "description": "Test and enhance your Islamic knowledge with this fun Ramadan quiz app.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#EAFEE9",
+    "theme_color": "#618264",
+    "icons": [
+      {
+        "src": "/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

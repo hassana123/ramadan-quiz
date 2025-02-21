@@ -11,7 +11,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import useFcmToken from "./hooks/useFcmToken";
-import { requestPermission } from "../firebase";
+import InstallButton from "./components/InstallButton";
+//import { requestPermission } from "../firebase";
 function App() {
   const { token, notificationPermissionStatus } = useFcmToken();
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/quiz-complete" element={<CompleteQuiz />} />
         <Route path="/leaderboard" element={<LeaderBoard />} />
       </Routes>
+      <InstallButton/>
       <Footer/>
     </main> 
   );

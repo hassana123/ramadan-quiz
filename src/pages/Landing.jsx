@@ -6,6 +6,7 @@ import TopFive from "../components/TopFive";
 import Extras from "../components/Extras";
 import DeedOfTheDay from "../components/DeedOfTheDay";
 import QuranTracker from "../components/Qurantracker";
+//import InstallButton from "../components/InstallButton";
 // import Confetti from "react-dom-confetti";
 // import ReactConfetti from "react-confetti";
 const Landing = () => {
