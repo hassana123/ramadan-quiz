@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="text-whiteish flex flex-col md:flex-row items-center my-10">
         
         {/* Image Section */}
-        <img className="md:w-[60%] w-[35%] md:mr-10 mb-5 md:mb-0" src={one} alt="Ramadan Image" />
+        <img className="md:w-[40%] lg:w-[60%] w-[25%] md:mr-10 mb-5 md:mb-0" src={one} alt="Ramadan Image" />
     
         {/* Text Content */}
         <div className="text-center">
@@ -29,14 +29,14 @@ const Hero = () => {
               className="lg:w-[45%] mx-auto w-[70%] md:w-[40%] bg-secondary py-4 text-center shadow-md hover:bg-whiteish hover:text-secondary rounded-[24px] transition duration-300 ease-in-out"
               to="/quiz-home"
             >
-              Play Quiz & Learn More
+              Play Quiz 
             </NavLink>
 
             <a
               className="lg:w-[45%] mx-auto w-[70%] md:w-[40%] bg-[#3E5C73] py-4 text-center shadow-md hover:bg-whiteish hover:text-[#3E5C73] rounded-[24px] transition duration-300 ease-in-out"
               href="https://hallaly-ramadan-planner.vercel.app/"
             >
-              Go to Ramadan Tracker
+              Ramadan Tracker
             </a>
           </div>
         </div>

@@ -18,6 +18,12 @@ const Navbar = () => {
         </span>
       </NavLink>
       <div className="hidden  my-3 md:block font-custom2 ">
+      <a
+          className="mx-4 hover:text-secondary "
+         href="https://hallaly-ramadan-planner.vercel.app/"
+        >
+         Ramadan Tracker
+        </a>
         <NavLink className="mx-4 hover:text-secondary" to="/leaderboard">
           Leader Board
         </NavLink>
@@ -32,6 +38,7 @@ const Navbar = () => {
         >
           Play Quiz
         </NavLink>
+        
       </div>
       <div
         className="md:hidden  cursor-pointer z-10 "
@@ -43,6 +50,13 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden bg-whiteish absolute top-[6%] w-[90%] right-[0%]  z-50 text-secondary text-center mt-2 ">
+          <a
+            className="block py-2 hover:bg-secondary hover:text-[#fff] mt-20"
+           href="https://hallaly-ramadan-planner.vercel.app/"
+            onClick={toggleMenu}
+          >
+            Ramadan Tracker
+          </a>
           <NavLink
             className="block py-2 hover:bg-secondary hover:text-[#fff] mt-20"
             to="/leaderboard"
@@ -64,6 +78,7 @@ const Navbar = () => {
           >
             Play Quiz
           </NavLink>
+          
         </div>
       )}
     </nav>
