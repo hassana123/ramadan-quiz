@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between px-10  font-600 py-1 shadow-md border-b border-b-[2px]  bg-mainbg">
+    <nav className="flex justify-between px-10 items-center font-600 py-1 shadow-md border-b border-b-[2px]  bg-mainbg">
       <NavLink to="/" className=" flex items-center gap-2 ">
         <img className="w-[30px] " src={moon} alt="logo" />
         <span className="text-[20px] font-400 font-custom  text-secondary">
@@ -34,7 +34,7 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div
-        className="md:hidden  cursor-pointer z-10  mt-[15px]"
+        className="md:hidden  cursor-pointer z-10 "
         onClick={toggleMenu}
       >
         <div className="w-8 h-[2px] bg-secondary mb-1"></div>
