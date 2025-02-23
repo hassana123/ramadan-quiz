@@ -25,7 +25,9 @@ const InstallButton = () => {
   };
 
   return (
-    showButton && (
+    <>
+    {showButton && (
+      <>
       <button
         onClick={handleInstall}
         className="fixed bottom-2 right-2 px-5 py-3 
@@ -36,7 +38,17 @@ const InstallButton = () => {
       >
         Install  App
       </button>
-    )
+      {isIOS && (
+        <div className="fixed bottom-4 right-4 bg-[#fff] p-4 rounded-xl shadow-lg text-[#000]">
+          <p>📱 To install:</p>
+          <p>1️⃣ Tap <strong>Share</strong> (📤) in Safari</p>
+          <p>2️⃣ Scroll down and select <strong>"Add to Home Screen"</strong></p>
+          <p>3️⃣ Enjoy the Ramadan Quiz! 🎉</p>
+        </div>
+      )}
+      </>
+    )}
+    </>
   );
 };
 
