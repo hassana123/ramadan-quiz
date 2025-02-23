@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const InstallButton = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [showButton, setShowButton] = useState(false);
-
+  const [isIOS, setIsIOS] = useState(false);
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
@@ -23,6 +23,17 @@ const InstallButton = () => {
       });
     }
   };
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    setIsIOS(/iphone|ipad|ipod/.test(userAgent));
+
+    window.addEventListener("beforeinstallprompt", (event) => {
+      event.preventDefault();
+      setDeferredPrompt(event);
+      setShowButton(true);
+    });
+  }, []);
+
 
   return (
     <>
