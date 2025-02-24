@@ -114,15 +114,15 @@ const useFcmToken = () => {
   useEffect(() => {
     const setupListener = async () => {
       if (!token) return;
-
+    
       console.log(`Listening for FCM messages with token ${token}`);
       const unsubscribe = onMessage(messaging, (payload) => {
         if (Notification.permission !== "granted") return;
-
+    
         console.log("Foreground push notification received:", payload);
         const link = payload.fcmOptions?.link || payload.data?.link;
-
-        // ✅ Display only using toast (Remove `new Notification(...)`)
+    
+        // ✅ Only show toast notification (remove `new Notification(...)`)
         toast(`${payload.notification?.title}: ${payload.notification?.body}`, {
           description: payload.notification?.body,
           action: link
@@ -136,10 +136,9 @@ const useFcmToken = () => {
           duration: 10000, // Stay visible for 10 seconds
         });
       });
-
+    
       return unsubscribe;
     };
-
     let unsubscribe = null;
     setupListener().then((unsub) => {
       if (unsub) {

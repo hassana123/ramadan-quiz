@@ -12,9 +12,12 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// ✅ Handle background messages properly
+// ✅ Handle background messages properly (Prevent duplicate notifications)
 messaging.onBackgroundMessage((payload) => {
   console.log("Received background message ", payload);
+
+  // ✅ If Firebase already sent a notification, do nothing
+  if (payload.notification) return;
 
   const notificationTitle = payload.notification?.title || "New Notification";
   const notificationBody = payload.notification?.body || "You have a new message.";
