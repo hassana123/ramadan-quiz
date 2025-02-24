@@ -12,44 +12,43 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// ✅ Handle background messages properly (Prevent duplicate notifications)
+// ✅ Handle background notifications
 messaging.onBackgroundMessage((payload) => {
   console.log("Received background message ", payload);
-
-  // ✅ If Firebase already sent a notification, do nothing
-  if (payload.notification) return;
 
   const notificationTitle = payload.notification?.title || "New Notification";
   const notificationBody = payload.notification?.body || "You have a new message.";
   const notificationIcon = "./moon.svg";
-  const url = payload.data?.link || "https://hallaly.vercel.app/"; // ✅ Ensure link is present
+  const url = payload.data?.link || "https://hallaly.vercel.app/"; // ✅ Default to PWA link
 
   const notificationOptions = {
     body: notificationBody,
     icon: notificationIcon,
     data: { url: url }, 
+    actions: [{ action: "open", title: "Open App" }],
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
-// ✅ Handle notification click event to open the link
-self.addEventListener("notificationclick", (event) => {
+// ✅ Handle notification click event correctly
+self.addEventListener("notificationclick", async (event) => {
   console.log("Notification clicked: ", event.notification);
 
-  event.notification.close(); // ✅ Always close the notification when clicked
+  event.notification.close(); // ✅ Close the notification
 
-  const notificationData = event.notification.data;
-  const url = notificationData?.url || "https://hallaly.vercel.app/"; // ✅ Default fallback URL
+  const url = event.notification.data?.url || "https://hallaly.vercel.app/"; // ✅ Ensure URL is available
 
   event.waitUntil(
     clients.matchAll({ type: "window", includeUncontrolled: true }).then((clientList) => {
       for (const client of clientList) {
         if (client.url === url && "focus" in client) {
-          return client.focus(); // ✅ Focus the existing tab if open
+          return client.focus(); // ✅ If PWA is open, focus it
         }
       }
-      return clients.openWindow(url); // ✅ Open a new tab if no matching window found
+      if (clients.openWindow) {
+        return clients.openWindow(url); // ✅ Open PWA or Chrome if not already open
+      }
     })
   );
 });
