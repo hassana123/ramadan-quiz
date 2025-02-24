@@ -7,7 +7,7 @@ const TOTAL_SURAHS = 114;
 const TOTAL_HIZB = 60; // The Qur'an is divided into 60 Hizb
 
 const QuranTracker = () => {
-  const [completedSurahs, setCompletedSurahs] = useState([]);
+  const [completedSurahs, setCompletedSurahs] = useState(JSON.parse(localStorage.getItem("quranProgress")) ||[]);
   const [goalDays, setGoalDays] = useState("");
   const [surahsPerDay, setSurahsPerDay] = useState(0);
   const [hizbPerDay, setHizbPerDay] = useState(0);
