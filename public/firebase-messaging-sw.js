@@ -37,21 +37,19 @@ messaging.onBackgroundMessage((payload) => {
 self.addEventListener("notificationclick", (event) => {
   console.log("Notification clicked: ", event.notification);
 
-  event.notification.close();
+  event.notification.close(); // ✅ Always close the notification when clicked
 
   const notificationData = event.notification.data;
-  if (notificationData && notificationData.url) {
-    event.waitUntil(
-      clients
-        .matchAll({ type: "window", includeUncontrolled: true })
-        .then((clientList) => {
-          for (const client of clientList) {
-            if (client.url === notificationData.url && "focus" in client) {
-              return client.focus();
-            }
-          }
-          return clients.openWindow(notificationData.url);
-        })
-    );
-  }
+  const url = notificationData?.url || "https://hallaly.vercel.app/"; // ✅ Default fallback URL
+
+  event.waitUntil(
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if (client.url === url && "focus" in client) {
+          return client.focus(); // ✅ Focus the existing tab if open
+        }
+      }
+      return clients.openWindow(url); // ✅ Open a new tab if no matching window found
+    })
+  );
 });

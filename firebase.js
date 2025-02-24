@@ -42,6 +42,6 @@ export const requestPermission = async () => {
 };
 
 // Handle foreground messages
-// onMessage(messaging, (payload) => {
-//   console.log("Message received:", payload);
-// });
+onMessage(messaging, (payload) => {
+  console.log("Message received:", payload);
+});
