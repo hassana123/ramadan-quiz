@@ -49,16 +49,16 @@ const Navbar = () => {
         <div className="w-6 h-[2px] bg-secondary"></div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-whiteish absolute top-[6%] w-[90%] right-[0%]  z-50 text-secondary text-center mt-2 ">
-          <a
+        <div className="md:hidden bg-whiteish absolute top-[5%] w-[90%] right-[0%]  z-50 text-secondary text-center m ">
+          {/* <a
             className="block py-2 hover:bg-secondary hover:text-[#fff] mt-20"
            href="https://hallaly-ramadan-planner.vercel.app/"
             onClick={toggleMenu}
           >
             Ramadan Tracker
-          </a>
+          </a> */}
           <NavLink
-            className="block py-2 hover:bg-secondary hover:text-[#fff] mt-20"
+            className="block py-2 my-5 hover:bg-secondary hover:text-[#fff] "
             to="/leaderboard"
             onClick={toggleMenu}
           >

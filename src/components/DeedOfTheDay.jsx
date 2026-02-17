@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { CheckCircle, Check, PlusCircle, Sparkles } from "lucide-react"; // Lucide icons
+import { CheckCircle, Check, PlusCircle } from "lucide-react";
 import { deeds as defaultDeeds } from "../data/deeds";
-import { motion } from "framer-motion"; // Animations
+import { motion } from "framer-motion";
 
 const DeedOfTheDay = () => {
-  // 🔹 Fixed start date: March 1st, 2025
-  const ramadanStartDate = new Date("2025-03-01");
-  const ramadanEndDate = new Date("2025-03-30");
+  // 🔹 Ramadan 2026: starts February 18, can last 29 or 30 days (ends March 19 at latest)
+  const ramadanStartDate = new Date("2026-02-18");
+  const ramadanEndDate = new Date("2026-03-19");
   const today = new Date();
-  const todayDate = today.toISOString().split("T")[0]; // YYYY-MM-DD
+  const todayDate = today.toISOString().split("T")[0];
 
-  // 🔹 Calculate the day of Ramadan (1 to 30)
   const timeDiff = today - ramadanStartDate;
   let dayOfRamadan = Math.floor(timeDiff / (1000 * 60 * 60 * 24)) + 1;
 
-  // 🔹 Restrict to Ramadan period (March 1 - 30)
   if (today < ramadanStartDate || today > ramadanEndDate) {
     dayOfRamadan = null;
   }
 
-  // 🔹 Retrieve user-suggested deeds from localStorage
   const storedDeeds = JSON.parse(localStorage.getItem("userDeeds")) || [];
-  const allDeeds = [...defaultDeeds, ...storedDeeds]; // Combine default & user deeds
+  const allDeeds = [...defaultDeeds, ...storedDeeds];
 
   const todayIndex = dayOfRamadan ? (dayOfRamadan - 1) % allDeeds.length : null;
   const [deed, setDeed] = useState(todayIndex !== null ? allDeeds[todayIndex] : "");
@@ -38,9 +35,7 @@ const DeedOfTheDay = () => {
 
   const checkIfCompleted = () => {
     const lastCompletedDate = localStorage.getItem("lastCompletedDate");
-    if (lastCompletedDate === todayDate) {
-      setIsCompleted(true);
-    }
+    if (lastCompletedDate === todayDate) setIsCompleted(true);
   };
 
   const checkStreak = () => {
@@ -76,8 +71,7 @@ const DeedOfTheDay = () => {
     if (currentStreak === 3) milestoneMessage = "🔥 3-Day Streak! Keep it up!";
     if (currentStreak === 7) milestoneMessage = "🏆 7-Day Streak! Great job!";
     if (currentStreak === 14) milestoneMessage = "🎉 14-Day Streak! Amazing!";
-    if (currentStreak === 30) milestoneMessage = "🌟 30-Day Streak! You did it!";
-    
+    if (currentStreak === 29 || currentStreak === 30) milestoneMessage = "🌟 Full Ramadan Streak! Masha'Allah!";
     setMilestone(milestoneMessage);
   };
 
@@ -89,10 +83,8 @@ const DeedOfTheDay = () => {
 
   const handleSuggestDeed = () => {
     if (newDeed.trim().length === 0) return;
-    
     const updatedDeeds = [...storedDeeds, newDeed];
     localStorage.setItem("userDeeds", JSON.stringify(updatedDeeds));
-    
     setNewDeed("");
     setShowSuggestionBox(false);
     alert("✅ Your deed suggestion has been saved!");
@@ -106,9 +98,10 @@ const DeedOfTheDay = () => {
         🌟 Deed of the Day
       </h1>
 
-      {/* ⛔ Outside Ramadan Message */}
       {dayOfRamadan === null ? (
-        <p className="text-center text-red-500 font-bold text-lg">Deeds will be available starting Ramadan (March 1 - 30).</p>
+        <p className="text-center text-red-500 font-bold text-lg">
+          Deeds will be available during Ramadan 2026 (Feb 18 – Mar 19).
+        </p>
       ) : (
         <>
           <motion.p
@@ -144,13 +137,11 @@ const DeedOfTheDay = () => {
             )}
           </div>
 
-          {/* 🔥 Streak Display */}
           <div className="bg-secondary text-whiteish py-1 mt-4 rounded-[16px] font-600 text-center">
             <h1 className="text-[48px]">{streak} 🔥</h1>
             <span>Day Streak</span>
           </div>
 
-          {/* 🎉 Milestone Message */}
           {milestone && (
             <motion.p
               initial={{ opacity: 0 }}
@@ -162,7 +153,6 @@ const DeedOfTheDay = () => {
             </motion.p>
           )}
 
-          {/* 📥 Suggest a Deed Button */}
           <button
             onClick={() => setShowSuggestionBox(!showSuggestionBox)}
             className="flex items-center justify-center text-white px-4 py-2 mt-5 rounded-xl shadow-md font-bold text-lg hover:bg-blue-600 transition-all mx-auto"
@@ -170,6 +160,24 @@ const DeedOfTheDay = () => {
             <PlusCircle className="mr-2" />
             Suggest a Deed
           </button>
+
+          {showSuggestionBox && (
+            <div className="mt-4 flex flex-col items-center gap-3">
+              <input
+                type="text"
+                value={newDeed}
+                onChange={(e) => setNewDeed(e.target.value)}
+                placeholder="Type your deed suggestion..."
+                className="w-full border-2 border-gray-300 rounded-xl px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-secondary"
+              />
+              <button
+                onClick={handleSuggestDeed}
+                className="bg-secondary text-white px-6 py-2 rounded-xl font-bold hover:bg-green-700 transition-all"
+              >
+                Submit
+              </button>
+            </div>
+          )}
         </>
       )}
     </section>

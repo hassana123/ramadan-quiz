@@ -48,10 +48,7 @@ export default App;
 // import { doc, setDoc } from "firebase/firestore";
 // import "./App.css";
 
-// Array of your day question files
-// import { useState,useEffect } from "react";
-// import { setDoc, doc } from "firebase/firestore";
-// import { firestore } from "../firebase";
+
 // const dayQuestionFiles = [
 //   "dayone",
 //   "daytwo",
