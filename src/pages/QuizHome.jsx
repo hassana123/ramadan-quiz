@@ -9,7 +9,7 @@ const QuizHome = () => {
 
   useEffect(() => {
     // Current date logic (Adjusted for Feb 17 start)
-    const startDate = new Date("2026-02-17");
+    const startDate = new Date("2026-02-18");
     const currentDate = new Date();
     const diff = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
     setCurrentDay(currentDate < startDate ? 0 : Math.min(diff + 1, 30));
