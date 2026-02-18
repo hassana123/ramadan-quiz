@@ -75,7 +75,7 @@ const QuizPage = () => {
       setIncorrectAnswersCount((count) => count + 1);
     }
 
-    // Delay before moving to the next question
+    // Increased to 6 seconds so users have time to read the justification
     setTimeout(() => {
       setShowJustification(false);
       setSelectedAnswer(null);
@@ -86,7 +86,7 @@ const QuizPage = () => {
       } else {
         navigate("/quiz-complete");
       }
-    }, 3500); // Show justification for 3.5 seconds
+    }, 6000);
   };
 
   // Save progress
@@ -102,14 +102,22 @@ const QuizPage = () => {
       ) : (
         <main className="font-custom2 bg-opaquebg w-full h-full">
           {/* Header */}
+           {/* Category Badge — only shown if the question has a category */}
+            
+
           <header className="bg-mainbg p-1">
-            <div className="flex justify-between mx-3 my-10">
+            {questions[currentQuestionIndex].category && (
+              <p className="text-center text-[15px] font-bold text-white ">
+                {questions[currentQuestionIndex].category}
+              </p>
+            )}
+            <div className="flex justify-between mx-3 my-6">
               <p className="text-[20px] font-600">{`Question ${
                 currentQuestionIndex + 1
               }`}</p>
 
               {/* Timer */}
-              <div className="flex justify-center pr-1 space-x-1 border-[2px] rounded-[4px] ">
+              <div className="flex justify-center pr-1 space-x-1 border-[2px] rounded-[4px]">
                 <img src={timer} alt="timer" />
                 <span>{`${Math.floor(timeRemaining / 60)}:${(
                   "0" +
@@ -138,7 +146,8 @@ const QuizPage = () => {
 
           {/* Quiz Section */}
           <section className="bg-whiteish shadow-md mt-[-50px] p-1 rounded-[16px] text-black w-[98%] mx-auto">
-            <h1 className="text-[24px] font-600 text-center my-10">
+
+            <h1 className="text-[24px] font-600 text-center my-8">
               {questions[currentQuestionIndex].question}
             </h1>
 
@@ -163,18 +172,6 @@ const QuizPage = () => {
                 </button>
               ))}
             </div>
-
-            {/* Justification Section */}
-            {showJustification && (
-              <div className="w-[90%] mx-auto mt-6 p-4 rounded-md shadow-lg bg-lightGray text-center transition-all">
-                <p className="text-lg font-semibold">
-                  {isCorrectAnswer ? "✅ Correct Answer!" : "❌ Incorrect Answer"}
-                </p>
-                <p className="text-md italic text-gray-700 mt-2">
-                  {questions[currentQuestionIndex].justification}
-                </p>
-              </div>
-            )}
           </section>
 
           {/* Exit Button */}
@@ -186,6 +183,26 @@ const QuizPage = () => {
               Exit
             </button>
           </div>
+
+          {/* Justification — fixed overlay at the bottom, always visible without scrolling */}
+          {showJustification && (
+            <div className="fixed text-white font-bold  bottom-10 left-0 right-0 z-50 px-4 py-2 ">
+              <div
+                className={`w-full rounded-2xl shadow-2xl p-5 text-center border-t-4 ${
+                  isCorrectAnswer
+                    ? "bg-mainbg border-highlight"
+                    : "bg-mainbg border-redish"
+                }`}
+              >
+                <p className="text-xl font-bold mb-2">
+                  {isCorrectAnswer ? "✅ Correct Answer!" : "❌ Incorrect Answer"}
+                </p>
+                <p className="text-[15px] italic text-white leading-relaxed">
+                  {questions[currentQuestionIndex].justification}
+                </p>
+              </div>
+            </div>
+          )}
         </main>
       )}
     </>

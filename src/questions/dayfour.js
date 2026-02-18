@@ -107,66 +107,196 @@
 //   },
 // ];
 
+// const dayFourQuestions = [
+//   {
+//     question: "When Ramadan comes, which of the gates are opened?",
+//     options: ["Gates of Jannah", "Gates of Mercy", "Gates of Makkah", "Gates of Hell"],
+//     correctOption: 0,
+//     justification: "When the month of Ramadan starts, the gates of Heaven are opened and the gates of Hell are closed. (Bukhari 1899)"
+//   },
+//   {
+//     question: "What is Az-Zaqqum?",
+//     options: ["Food for the people of Hellfire", "Drink for the people of Hellfire", "Home for the people of Hellfire", "Clothes for the people of Hellfire"],
+//     correctOption: 0,
+//     justification: "Then indeed you, O those astray, will be eating from trees of zaqqum. (Quran 56:51-52)"
+//   },
+//   {
+//     question: "What is Sidrat al-Muntaha?",
+//     options: ["Food for the people of Jannah", "An olive tree of the farthest boundary", "A lote tree of the farthest boundary", "A drink for the people of Jannah"],
+//     correctOption: 2,
+//     justification: "Near Sidrat al-Muntaha (the lote tree of the utmost boundary, beyond which none can pass). (Quran 53:13-16)"
+//   },
+//   {
+//     question: "Which is NOT one of the rights of a Muslim upon another Muslim?",
+//     options: ["If one invites, you accept it", "If one dies, you attend the funeral", "If one asks for advice, you give sincerely", "If one asks for money, you give"],
+//     correctOption: 3,
+//     justification: "The five rights are returning salaam, visiting the sick, attending funerals, accepting invitations, and saying 'yarhamuk Allah' when one sneezes. (Bukhari 1240, Muslim 2162)"
+//   },
+//   {
+//     question: "Which uncle of Prophet Muhammad (SAW) didn’t accept Islam?",
+//     options: ["Abdul Muttalib", "Hamza", "Abu Lahab", "Al-Abbas"],
+//     correctOption: 2,
+//     justification: "'Perished be the hands of Abu Lahab and ruined he be.' (Quran 111:1-5)"
+//   },
+//   {
+//     question: "What are you NOT allowed to do in Sujood?",
+//     options: ["Make dua in Arabic", "Recite Qur’an", "Recite adhkar"],
+//     correctOption: 1,
+//     justification: "The Prophet ﷺ said: 'I have been forbidden to recite the Quran in the state of bowing and prostration.' (Muslim)"
+//   },
+//   {
+//     question: "Reciting Surah Fatiha in each rakat of the Salah is…?",
+//     options: ["Optional", "Encouraged", "Not necessary", "Mandatory"],
+//     correctOption: 3,
+//     justification: "The Prophet ﷺ said: 'There is no prayer for the one who does not recite al-Fatiha.' (Bukhari 714)"
+//   },
+//   {
+//     question: "In Sujood, which body part should NOT be touching the ground?",
+//     options: ["Forearms", "Nose", "Feet", "Hands"],
+//     correctOption: 0,
+//     justification: "The Prophet ﷺ said: 'Be straight in prostration and let none of you put his forearms on the ground like a dog.' (Bukhari 788, Muslim 493)"
+//   },
+//   {
+//     question: "Allah says, with His knowledge, He is closer to us than our…?",
+//     options: ["Thoughts", "Heart", "Jugular Vein", "Blood"],
+//     correctOption: 2,
+//     justification: "'We are closer to him than his jugular vein.' (Quran 50:16)"
+//   },
+//   {
+//     question: "Eating Suhoor (Predawn meal) is…?",
+//     options: ["Sunnah", "Waajib", "Permissible", "Makrooh"],
+//     correctOption: 0,
+//     justification: "Take a meal a little before dawn, for there is a blessing in taking a meal at that time. (Muslim 1095)"
+//   }
+// ];
+// export default dayFourQuestions;
+
+// 📖 Source: Stories of the Prophets by Ibn Kathir
+// 🗂️ Category: Prophet Nuh AS (Noah)
+// 📖 Source: Stories of the Prophets by Ibn Kathir
+// 🗂️ Category: Prophet Nuh AS (Noah)
+
 const dayFourQuestions = [
   {
-    question: "When Ramadan comes, which of the gates are opened?",
-    options: ["Gates of Jannah", "Gates of Mercy", "Gates of Makkah", "Gates of Hell"],
-    correctOption: 0,
-    justification: "When the month of Ramadan starts, the gates of Heaven are opened and the gates of Hell are closed. (Bukhari 1899)"
-  },
-  {
-    question: "What is Az-Zaqqum?",
-    options: ["Food for the people of Hellfire", "Drink for the people of Hellfire", "Home for the people of Hellfire", "Clothes for the people of Hellfire"],
-    correctOption: 0,
-    justification: "Then indeed you, O those astray, will be eating from trees of zaqqum. (Quran 56:51-52)"
-  },
-  {
-    question: "What is Sidrat al-Muntaha?",
-    options: ["Food for the people of Jannah", "An olive tree of the farthest boundary", "A lote tree of the farthest boundary", "A drink for the people of Jannah"],
+    category: "🚢 Prophet Nuh AS",
+    question: "For how many years did Prophet Nuh (AS) call his people to Islam before the flood?",
+    options: ["100 years", "500 years", "950 years", "40 years"],
     correctOption: 2,
-    justification: "Near Sidrat al-Muntaha (the lote tree of the utmost boundary, beyond which none can pass). (Quran 53:13-16)"
+    justification:
+      "'And We certainly sent Nuh to his people, and he remained among them a thousand years minus fifty years.' (Quran 29:14). Ibn Kathir confirms this was 950 years of preaching. (Ibn Kathir – Stories of the Prophets)",
   },
   {
-    question: "Which is NOT one of the rights of a Muslim upon another Muslim?",
-    options: ["If one invites, you accept it", "If one dies, you attend the funeral", "If one asks for advice, you give sincerely", "If one asks for money, you give"],
-    correctOption: 3,
-    justification: "The five rights are returning salaam, visiting the sick, attending funerals, accepting invitations, and saying 'yarhamuk Allah' when one sneezes. (Bukhari 1240, Muslim 2162)"
-  },
-  {
-    question: "Which uncle of Prophet Muhammad (SAW) didn’t accept Islam?",
-    options: ["Abdul Muttalib", "Hamza", "Abu Lahab", "Al-Abbas"],
-    correctOption: 2,
-    justification: "'Perished be the hands of Abu Lahab and ruined he be.' (Quran 111:1-5)"
-  },
-  {
-    question: "What are you NOT allowed to do in Sujood?",
-    options: ["Make dua in Arabic", "Recite Qur’an", "Recite adhkar"],
+    category: "🚢 Prophet Nuh AS",
+    question: "What were the names of the five main idols that the people of Nuh worshipped, as mentioned in the Quran?",
+    options: [
+      "Baal, Ashtaroth, Dagon, Molech, and Ra",
+      "Wadd, Suwa', Yaghuth, Ya'uq, and Nasr",
+      "Lat, Uzza, Manat, Hubal, and Isaf",
+      "Jupiter, Saturn, Mars, Venus, and Mercury",
+    ],
     correctOption: 1,
-    justification: "The Prophet ﷺ said: 'I have been forbidden to recite the Quran in the state of bowing and prostration.' (Muslim)"
+    justification:
+      "'And they said: Do not abandon your gods — do not abandon Wadd, Suwa', Yaghuth, Ya'uq, or Nasr.' (Quran 71:23). Ibn Kathir explains these were originally righteous men whose statues the people later began to worship. (Ibn Kathir)",
   },
   {
-    question: "Reciting Surah Fatiha in each rakat of the Salah is…?",
-    options: ["Optional", "Encouraged", "Not necessary", "Mandatory"],
-    correctOption: 3,
-    justification: "The Prophet ﷺ said: 'There is no prayer for the one who does not recite al-Fatiha.' (Bukhari 714)"
+    category: "🚢 Prophet Nuh AS",
+    question: "What was the sign from Allah that signalled the flood was about to begin?",
+    options: [
+      "A thunder and lightning storm of great force",
+      "Water began gushing from a specific oven (tannur)",
+      "The river Nile overflowed its banks",
+      "A special wind blew from the east",
+    ],
+    correctOption: 1,
+    justification:
+      "'Until when Our command came and the oven overflowed, We said: Load upon the ship two of every kind, a pair...' (Quran 11:40). Ibn Kathir explains the tannur (oven) was the sign that the flood had begun. (Ibn Kathir)",
   },
   {
-    question: "In Sujood, which body part should NOT be touching the ground?",
-    options: ["Forearms", "Nose", "Feet", "Hands"],
-    correctOption: 0,
-    justification: "The Prophet ﷺ said: 'Be straight in prostration and let none of you put his forearms on the ground like a dog.' (Bukhari 788, Muslim 493)"
+    category: "🚢 Prophet Nuh AS",
+    question: "When Nuh AS called to his son to board the Ark, what did his son arrogantly say?",
+    options: [
+      "'Father, I do not believe in this flood'",
+      "'I will seek refuge on a high mountain to protect me from the water'",
+      "'I will build my own boat'",
+      "'Leave me — I have my own people to follow'",
+    ],
+    correctOption: 1,
+    justification:
+      "Nuh's son said: 'I will take refuge on a mountain; it will protect me from the water.' Nuh said: 'Today there is no protector from the decree of Allah.' The waves came between them and he was among the drowned. (Quran 11:43, Ibn Kathir)",
   },
   {
-    question: "Allah says, with His knowledge, He is closer to us than our…?",
-    options: ["Thoughts", "Heart", "Jugular Vein", "Blood"],
+    category: "🚢 Prophet Nuh AS",
+    question: "On which mountain did Nuh's Ark come to rest after the floodwaters subsided?",
+    options: ["Mount Sinai", "Mount Ararat", "Mount Judi", "Mount Uhud"],
     correctOption: 2,
-    justification: "'We are closer to him than his jugular vein.' (Quran 50:16)"
+    justification:
+      "'And it was said: O earth, swallow your water, and O sky, withhold! And the water subsided and the matter was accomplished. And the ship came to rest on Mount Judi.' (Quran 11:44, Ibn Kathir)",
   },
   {
-    question: "Eating Suhoor (Predawn meal) is…?",
-    options: ["Sunnah", "Waajib", "Permissible", "Makrooh"],
-    correctOption: 0,
-    justification: "Take a meal a little before dawn, for there is a blessing in taking a meal at that time. (Muslim 1095)"
-  }
+    category: "🚢 Prophet Nuh AS",
+    question: "What were the names of Nuh's three sons who became ancestors of all later nations?",
+    options: [
+      "Ibrahim, Ismail, and Ishaq",
+      "Sam (Shem), Ham, and Yafith (Japheth)",
+      "Adam, Idrees, and Hud",
+      "Musa, Harun, and Dawud",
+    ],
+    correctOption: 1,
+    justification:
+      "Ibn Kathir records that Nuh had three sons — Sam, Ham, and Yafith — who survived the flood and became the fathers of the three great families of humanity. Sam is considered the ancestor of the Arabs and Semitic peoples. (Ibn Kathir)",
+  },
+  {
+    category: "🚢 Prophet Nuh AS",
+    question: "The wife of Nuh AS is mentioned in the Quran as an example of which category of people?",
+    options: [
+      "Those who have great faith",
+      "Those who betray their righteous husbands and disbelieve",
+      "Those who endure hardship patiently",
+      "Those who sacrifice everything for Islam",
+    ],
+    correctOption: 1,
+    justification:
+      "'Allah presents an example of those who disbelieved: the wife of Nuh and the wife of Lut. They were under two of Our righteous servants but betrayed them, so those prophets did not avail them from Allah at all.' (Quran 66:10, Ibn Kathir)",
+  },
+  {
+    category: "🚢 Prophet Nuh AS",
+    question: "When the flood ended and Nuh AS disembarked, what supplication did he make?",
+    options: [
+      "'O Allah, I am grateful for this safe journey'",
+      "'My Lord, let me land with blessed landing, as You are the best to accommodate'",
+      "'All praise to Allah who saved the believers'",
+      "'O Allah, bless this land and its inhabitants'",
+    ],
+    correctOption: 1,
+    justification:
+      "'And say: My Lord, let me alight with blessed alighting, and You are the best to accommodate.' (Quran 23:29). Ibn Kathir notes this du'a as a sunnah when disembarking from a vessel. (Ibn Kathir)",
+  },
+  {
+    category: "🚢 Prophet Nuh AS",
+    question: "Nuh AS grieved deeply over his disbelieving son. What was Allah's firm response when he pleaded for him?",
+    options: [
+      "'Your son will be forgiven in the Hereafter'",
+      "'Your son is not of your family — he is of unrighteous conduct'",
+      "'Ask My forgiveness for him and he will be saved'",
+      "'His punishment is a matter between him and Me'",
+    ],
+    correctOption: 1,
+    justification:
+      "Allah told Nuh: 'O Nuh, indeed he is not of your family; indeed, he is one whose conduct has not been righteous. So do not ask Me for that about which you have no knowledge.' (Quran 11:46). A powerful lesson on faith overriding bloodlines. (Ibn Kathir)",
+  },
+  {
+    category: "🚢 Prophet Nuh AS",
+    question: "Why did the people of Nuh AS use his disbelieving son as a reason to justify refusing the Prophet's message?",
+    options: [
+      "His son was known to be a great scholar, so they trusted him more",
+      "If even a prophet's own son could refuse, they argued they had the right to refuse too",
+      "His son led them and promised them a better life",
+      "This is not mentioned in the story",
+    ],
+    correctOption: 1,
+    justification:
+      "Ibn Kathir notes that Nuh's disbelieving son became a symbol used by the people to justify their own refusal — if the Prophet's own household was divided, they thought the message could not be certain truth. The story is a reminder that guidance is from Allah alone. (Ibn Kathir)",
+  },
 ];
+
 export default dayFourQuestions;
