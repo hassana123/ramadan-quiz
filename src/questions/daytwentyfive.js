@@ -1,140 +1,134 @@
-const dayTwentyFiveQuestions = [
+ const dayTwentyFiveQuestions = [
   {
-    question: "How many Medina Surahs (Medina Chapter) do we have?",
-    options: ["28", "29", "30", "31", "32"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "Who was the companion whose real name was mentioned in the Quran?",
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "Maryam AS is the only woman mentioned by name in the Quran. Which surah is named after her?",
     options: [
-      "Muhammad bn ‘Abdillah",
-      "Abubakr Siddiq",
-      "Umar bn Khatab",
-      "Zaydu bn Harithah",
-      "‘Abdullah bn ‘Abbas",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "What is the first word of Allaah that was first revealed to Prophet Muhammad (peace and blessing of Allaah be upon him) by Angel JIbril (May the peace be upon him)?",
-    options: [
-      "Alif Lam Mim",
-      "Bimilah",
-      "Iqrah",
-      "A’undhubillah",
-      "Alhamdulillah",
+      "Surah An-Nisa (The Women)",
+      "Surah Al-Imran",
+      "Surah Maryam — Chapter 19",
+      "Surah Al-Baqarah",
     ],
     correctOption: 2,
+    justification:
+      "Surah Maryam is Chapter 19 of the Quran. Ibn Kathir notes that Maryam AS is honoured as the greatest woman who ever lived — the Quran mentions her by name more than any other woman, and an entire surah bears her name.",
   },
   {
-    question: "How many times was the name Muhammad mentioned in the Quran?",
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "What was the miraculous comparison Allah made in the Quran about how Isa AS was created?",
     options: [
-      "one time",
-      "two times",
-      "three times",
-      "four times",
-      "five times",
-    ],
-    correctOption: 3,
-  },
-  {
-    question: "Which word falls at the middle of Quran?",
-    options: [
-      "Walyatalatof",
-      "yasaluunaka",
-      "fajama’naaum",
-      "Fa asqaynakumuuh",
-      "Fasayakfiikahumu",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "In which verse of the Quran do we find the name “Allah” two times sequentially without an alphabet separating them?",
-    options: [
-      "Suratul Baqarah",
-      "Suratul Al-Imran",
-      "Suratun Nisaa",
-      "Suratul Maidah",
-      "Suratul An’am",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Al Quran script diacritics (phonetic guide marks; vowel marks) began during the tenure of …….",
-    options: [
-      "Abubakr Sidiq",
-      "Umar bn Khattab",
-      "‘Uthman bn ‘Affan",
-      "Ali bn Abi Talib",
-      "Khaleefah ‘Abdul Maliki bn Mirwan.",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "In which Chapter of the Quran can we find the name Allah in each verse of it?",
-    options: [
-      "Suratul Ikhlas",
-      "Suratul Mujadalah",
-      "Suratul Jumu’at",
-      "Suratul Hashr",
-      "Suratus Saf",
+      "Like the creation of the angels — from light",
+      "Like the creation of Adam AS — from nothing, by the word 'Be, and it is'",
+      "Like the creation of Hawwa — from a rib",
+      "Like the creation of the jinn — from fire",
     ],
     correctOption: 1,
+    justification:
+      "'Indeed, the example of Isa to Allah is like that of Adam. He created him from dust; then He said to him: Be, and he was.' (Quran 3:59). Ibn Kathir explains this verse refutes the claim of divinity for Isa — if Adam needed no father, then neither does Isa's miraculous birth prove divinity.",
   },
   {
-    question: "How many Mekkah Surahs do we have?",
-    options: ["28", "86", "63", "43", "32"],
-    correctOption: 1,
-  },
-  {
-    question: "How many Chapters of the Quran start with ‘Alhamdulillah’?",
-    options: ["1", "2", "3", "4", "5"],
-    correctOption: 4,
-  },
-  {
-    question: "How many Hizb (division) are there in the Quran?",
-    options: ["6666", "313", "114", "60", "30"],
-    correctOption: 3,
-  },
-  {
-    question:
-      "How many Sajdah (prostration of recitation) are there in the Quran?",
-    options: ["10", "15", "20", "25", "30"],
-    correctOption: 1,
-  },
-  {
-    question: "How many Chapters of the Quran start with Alif Laam Meem?",
-    options: ["6", "5", "4", "3", "2"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "They began putting dots on alphabets of the Quran during the tenure of ……………",
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "When Maryam AS went into seclusion and the angel appeared to her as a man, what did she say?",
     options: [
-      "Abubakr Sidiq",
-      "Umar bn Khattab",
-      "‘Uthman bn ‘Affan",
-      "Ali bn Abi Talib",
-      "Khaleefah ‘Abdul Maliki bn Mirwan.",
+      "She asked who he was and where he came from",
+      "She said: 'I seek refuge with the Most Merciful from you, if you are fearing of Allah'",
+      "She asked him to leave immediately",
+      "She fainted from fear",
     ],
-    correctOption: 4,
+    correctOption: 1,
+    justification:
+      "'She said: Indeed, I seek refuge in the Most Merciful from you — if you should be fearing of Allah.' (Quran 19:18). Ibn Kathir praises this as the response of a pure, God-conscious woman — her first instinct was to invoke Allah's protection.",
   },
   {
-    question:
-      "Which Chapter of the Quran comprises of two Bismillah Rahmani Raheem?",
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "What miracle did Prophet Isa AS perform immediately as a newborn in the cradle?",
     options: [
-      "Suratul Ankabut",
-      "Suratul Insan",
-      "Suratun Naml",
-      "Suratul Rahman",
-      "Suratul Mulk",
+      "He clapped his hands and food appeared",
+      "He spoke to the people to defend his mother's honour",
+      "He walked and pointed to the sky",
+      "He recited the 99 names of Allah",
+    ],
+    correctOption: 1,
+    justification:
+      "'He said: Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet.' (Quran 19:30). Ibn Kathir explains that when Maryam returned with the baby and was accused of immorality, she pointed to the infant — and Isa AS spoke in the cradle in one of history's greatest miracles.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "Which of the following was NOT a miracle of Prophet Isa AS mentioned in the Quran?",
+    options: [
+      "Healing the blind and lepers",
+      "Raising the dead by Allah's permission",
+      "Creating a bird from clay and breathing life into it",
+      "Parting the sea",
+    ],
+    correctOption: 3,
+    justification:
+      "Isa AS said: 'I create for you from clay the form of a bird... and I cure the blind and the leper, and I give life to the dead — by permission of Allah.' (Quran 3:49). The parting of the sea was the miracle of Musa AS, not Isa AS. Ibn Kathir lists each miracle of Isa as divine proof of his prophethood.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "What does the Quran clearly state about the crucifixion of Isa AS?",
+    options: [
+      "He was crucified and then resurrected",
+      "He chose to be crucified to save his people",
+      "He was neither killed nor crucified — it was made to appear so, and Allah raised him up",
+      "He escaped crucifixion by fleeing to another land",
     ],
     correctOption: 2,
+    justification:
+      "'And they did not kill him, nor did they crucify him, but it was made to appear so to them... Rather, Allah raised him to Himself.' (Quran 4:157-158). Ibn Kathir affirms this is the Islamic position — Isa AS was raised alive to Allah.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "What two honourable titles does the Quran give to Isa AS — titles found in Surah An-Nisa?",
+    options: [
+      "Khalilullah and Safiyyullah",
+      "Ruhullah (Spirit of Allah) and Kalimatullah (Word of Allah)",
+      "Habibullah and Rasulullah",
+      "Siddiq and Shahid",
+    ],
+    correctOption: 1,
+    justification:
+      "'The Messiah, Isa son of Maryam, is but a messenger of Allah and His word which He directed to Maryam and a spirit from Him (Ruhullah).' (Quran 4:171). Ibn Kathir explains these titles honour Isa AS greatly — but the verse also clarifies he is not divine, to refute both extremes.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "What is the name of the holy book revealed to Prophet Isa AS?",
+    options: [
+      "Az-Zabur",
+      "The original Torah",
+      "Al-Injeel (The Gospel)",
+      "As-Suhuf",
+    ],
+    correctOption: 2,
+    justification:
+      "'And We sent after them Isa, son of Maryam, confirming what came before him in the Torah, and We gave him the Injeel (Gospel).' (Quran 5:46). Ibn Kathir explains the original Injeel revealed to Isa AS is different from the present-day gospels written by others after him.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "According to Islamic belief, what will Prophet Isa AS do when he descends again before the Day of Judgment?",
+    options: [
+      "He will build a great mosque in Jerusalem",
+      "He will re-establish the kingdom of Sulaiman",
+      "He will descend near Damascus, kill the Dajjal (Antichrist), break the cross, and establish justice",
+      "He will come as a new prophet with a new message",
+    ],
+    correctOption: 2,
+    justification:
+      "The Prophet ﷺ said: 'By the One in Whose Hand is my soul, the son of Maryam will descend among you as a just ruler. He will break the cross, kill the pig, and abolish the jizyah...' (Bukhari 2222, Muslim 155). His descent is one of the Major Signs of the Last Hour.",
+  },
+  {
+    category: "✨ Prophet Isa AS & Maryam AS",
+    question: "The Disciples (Hawariyyin) of Isa AS made a special request. What was it and what miraculous thing was sent?",
+    options: [
+      "They asked for the ability to walk on water, and it was granted",
+      "They asked for a table spread with food from heaven (Ma'idah) as a sign and sustenance",
+      "They asked for the Torah to be revealed again",
+      "They asked to see Allah directly",
+    ],
+    correctOption: 1,
+    justification:
+      "'The disciples said: O Isa, son of Maryam, can your Lord send down to us a table spread with food from heaven?' (Quran 5:112). Allah sent it as a sign and blessing, but warned that whoever disbelieved afterwards would be punished more severely. This event gives Surah Al-Ma'idah its name.",
   },
 ];
+
 export default dayTwentyFiveQuestions;

@@ -1,151 +1,134 @@
-const dayTwentySevenQuestions = [
+ const dayTwentySevenQuestions = [
   {
-    question:
-      "How many classes do we have when we classify Hadith according to the number of reporters involved in each stage of Sanad?",
-    options: ["4 Classes", "2 Classes", "6 Classes", "5 Classes", "3 Classes"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "When classifying Hadith according to the accepted and rejected (this is done according to reliability and memory of the reporters) we have how many classes?",
-    options: ["4 Classes", "2 Classes", "6 Classes", "5 Classes", "3 Classes"],
-    correctOption: 4,
-  },
-  {
-    question: "What a reporter of Hadith adds to the Hadith is called…?",
-    options: ["Al Mudallas", "As Shadh", "Al Mudraj", "Al Mawdu’", "Al Munkar"],
-    correctOption: 2,
-  },
-  {
-    question:
-      "… means a Hadith which is weak due to the uncertainty caused by concealed defects made by the reporter of that Hadith.",
-    options: ["Al Mudallas", "As Shadh", "Al Mudraj", "Al Mawdu’", "Al Munkar"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "What is the name of the Hadith that the reporter at the end of transmitters after ‘Successor’ was omitted?",
-    options: ["Al Mursal", "Al Mawdu’", "Al Mudraj", "Al Munkar", "Al Gareeb"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "What is the name of the Hadith that only one single reporter is found narrating it some stage of Isnad?",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "In which city and in which family was the Prophet Muhammad ﷺ born?",
     options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawdu’",
-      "Al Mudraj",
-      "Al Munkar",
-      "Al Gareeb",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "A Hadith narrated from Prophet is Marfu (Elevated) while a Hadith narrated from the Companion is …?",
-    options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawquf",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Maqtu’",
+      "Medina, in the tribe of Al-Khazraj",
+      "Mecca, in the tribe of Quraysh — the noble Banu Hashim clan",
+      "Taif, in the tribe of Thaqif",
+      "Jerusalem, in the family of the Israelites",
     ],
     correctOption: 1,
+    justification:
+      "The Prophet ﷺ was born in Mecca on the 12th of Rabi al-Awwal in the Year of the Elephant (approximately 570 CE), in the most honoured clan of Quraysh — Banu Hashim. His grandfather Abdul-Muttalib was the custodian of the Kaaba. (Seerah Ibn Hisham)",
   },
-
   {
-    question: "Four classifications of accepted hadiths are…, …, … and …",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "What was the beloved title the Quraysh of Mecca gave to the Prophet ﷺ before his prophethood, and why?",
     options: [
-      "Sahih, Hassan, Gareeb and Maqlub",
-      "Sahih, Hassan, Gareeb and Musalsal",
-      "Sahih, Hassan, Gareeb and Shadh",
-      "Sahih, Hassan, Mahfuz and Shadh",
-      "Sahih lithatih, Sahih ligayrih, Hassan lithatih and Hassan ligayrih",
+      "Al-Kamil — The Perfect One, for his worship",
+      "Al-Ameen — The Trustworthy, for his honesty and integrity",
+      "Al-Akram — The Most Generous, for his charity",
+      "Al-Hakeem — The Wise, for his judgments",
     ],
-    correctOption: 4,
+    correctOption: 1,
+    justification:
+      "Even before prophethood, the entire community of Mecca trusted the Prophet ﷺ with their valuables. He was known universally as 'Al-Ameen' — The Trustworthy. This was the greatest character witness for his prophethood. (Ibn Hisham, Seerah)",
   },
   {
-    question:
-      "Two generally accepted reasons for rejecting a Hadith are … and …",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "In which blessed location did the Prophet ﷺ receive the first revelation, and what were the first words revealed?",
     options: [
-      "Chain and Content",
-      "Lie and Fabrication",
-      "Interruption in the chain of transmission and Defects",
-      "Period and Contradiction",
-      "Obscure and Time",
+      "The Kaaba — 'O you who is wrapped in garments'",
+      "Cave Hira on Jabal an-Nur — 'Iqra: Read in the name of your Lord who created'",
+      "Masjid Al-Aqsa — 'Praise be to Allah, Lord of the worlds'",
+      "The valley of Mina — 'Say: He is Allah, the One'",
+    ],
+    correctOption: 1,
+    justification:
+      "The first revelation came in Cave Hira on Jabal an-Nur (Mountain of Light): 'Iqra bismi rabbika alladhi khalaq — Read in the name of your Lord who created.' (Quran 96:1). The Prophet ﷺ was 40 years old. He rushed home trembling to Khadijah RA. (Bukhari 3)",
+  },
+  {
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "Who was the very first person to accept Islam and believe in the Prophet ﷺ?",
+    options: [
+      "Abu Bakr As-Siddiq RA",
+      "Ali ibn Abi Talib RA",
+      "Khadijah bint Khuwaylid RA — the Prophet's wife",
+      "Uthman ibn Affan RA",
     ],
     correctOption: 2,
+    justification:
+      "Khadijah RA was the very first person to accept Islam. When the Prophet ﷺ returned shaking from Cave Hira, she immediately believed him, comforted him, and took him to her cousin Waraqah ibn Nawfal. (Bukhari 3). She is called 'Mother of the Believers' and first of the believers.",
   },
   {
-    question:
-      "When two connected people narrate a Hadith from each other, the narration is called…?",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "The Hijra (migration) from Mecca to Medina was a turning point in Islamic history. In which year did it occur?",
     options: [
-      "Al Mudabbaj",
-      "Riwayatul aqran",
-      "Al Musalsal",
-      "Al Ma’ruf",
-      "Al Mahfuz",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "………………………is a Hadith that in each stage of Isnad only two reporters are found narrating it.",
-    options: [
-      "Al Hadith ‘Aziz",
-      "Al Mawdu’",
-      "Al Mudraj",
-      "Al Munkar",
-      "Al Gareeb",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "………………………………………is a Hadith that is narrated by a liar or the content of the Hadith is against Islamic rules.",
-    options: [
-      "Al Mursal",
-      "Al Maodu’",
-      "Al Mudraj",
-      "Al Munqati’",
-      "Al Gareeb",
-    ],
-    correctOption: 1,
-  },
-  {
-    question: "Science of Hadith is classified in to two, what are they?",
-    options: [
-      "Sahih and Da’eef",
-      "Isnad and Matn",
-      "Ilm lhadith Riwayah and Ilm lhadith Dirayah",
-      "Ilm Rijal and Ilm Riwayah",
-      "Maqbul and Mardud",
+      "610 CE, the year of first revelation",
+      "615 CE, when the companions migrated to Abyssinia",
+      "622 CE — this event marks the beginning of the Islamic calendar",
+      "630 CE, the year Mecca was conquered",
     ],
     correctOption: 2,
+    justification:
+      "The Hijra took place in 622 CE and is so significant that Umar RA later established it as the starting point of the Islamic (Hijri) calendar. The Prophet ﷺ and Abu Bakr RA hid in the Cave of Thawr for three days before continuing to Medina. (Bukhari, Seerah Ibn Hisham)",
   },
   {
-    question:
-      "………………………is a Hadith that has uninterrupted Isnad narrated by reliable traditionalists with high retentive memory from another traditionalist of the same status, and void of irregularity and defects.",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "The Battle of Badr in 2 AH was a decisive victory for the Muslims. What was the ratio of Muslim fighters to Quraysh fighters?",
     options: [
-      "Hadith Hassan",
-      "Hadith Sahih",
-      "Hadith Gareeb",
-      "Hadith Da’eef",
-      "Hadith Mashur",
+      "Muslims were 1000 vs 300 Quraysh",
+      "Muslims were 313 vs approximately 1000 Quraysh",
+      "Both sides were equal at 500 fighters each",
+      "Muslims were 200 vs 800 Quraysh",
     ],
     correctOption: 1,
+    justification:
+      "At Badr, approximately 313 poorly-armed Muslims faced nearly 1000 well-equipped Qurayshi soldiers. Yet Allah sent angels to assist: 'Allah has already given you victory at Badr while you were few.' (Quran 3:123). 70 Quraysh were killed and 70 captured. (Ibn Hisham, Seerah)",
   },
   {
-    question:
-      "When only one of the two connected people narrates Hadith from his partner and his partner did not narrate any from him, the narration is called…?",
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "When Mecca was finally conquered by the Prophet ﷺ in 8 AH, how did he treat the Quraysh who had persecuted and tortured Muslims for 20 years?",
     options: [
-      "Al Mudabbaj",
-      "Riwayatul aqran",
-      "Al Musalsal",
-      "Al Ma’ruf",
-      "Al Mahfuz",
+      "He executed the leaders of the persecution",
+      "He expelled all Quraysh from Mecca",
+      "He gave a general amnesty, saying: 'Go — you are free'",
+      "He enslaved the Quraysh as they had enslaved the Muslims",
+    ],
+    correctOption: 2,
+    justification:
+      "On the day Mecca was conquered, the Prophet ﷺ stood at the Kaaba and said to the gathered Quraysh: 'What do you think I will do with you?' They replied: 'A noble brother, son of a noble brother.' He said: 'Go — you are free.' (Ibn Hisham). This was the greatest act of forgiveness in human history.",
+  },
+  {
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "What was the profound message of the Prophet's ﷺ Farewell Sermon (Khutbatul Wada) delivered at Hajj in 10 AH?",
+    options: [
+      "He announced a new set of religious laws for all Muslims",
+      "He declared the equality of all humans, the sanctity of life and property, and the responsibility to convey his message",
+      "He appointed Ali RA as his successor",
+      "He warned only about the Day of Judgment",
     ],
     correctOption: 1,
+    justification:
+      "The Farewell Sermon included: 'All mankind is from Adam and Eve... no Arab has superiority over a non-Arab, no white over black except by piety and good deeds... Your blood and property are sacred... Convey this to those not present.' He asked three times: 'Have I conveyed the message?' (Ibn Hisham)",
+  },
+  {
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "What were the last words the Prophet ﷺ was heard saying before he passed away?",
+    options: [
+      "La ilaha illallah",
+      "Allahuma ighfir li — O Allah forgive me",
+      "'With the Highest Companion' — As-Rafiq al-A'la, repeated three times",
+      "Ummati, ummati — My nation, my nation",
+    ],
+    correctOption: 2,
+    justification:
+      "Aisha RA narrated: 'The Prophet's last words were: Allahumma fir-Rafiq al-A'la — O Allah, with the Highest Companion.' (Bukhari 4463). He was given the choice between the world and meeting his Lord — and he chose the Highest Companion. He passed at age 63.",
+  },
+  {
+    category: "🌟 Seerah — Life of the Prophet ﷺ",
+    question: "The Prophet ﷺ said: 'I have left among you two things — you will never go astray if you hold onto them.' What are these two things?",
+    options: [
+      "The Quran and Sunnah (my example)",
+      "Salah and fasting",
+      "The Quran and the Kaaba",
+      "Love of Allah and love of the Prophet ﷺ",
+    ],
+    correctOption: 0,
+    justification:
+      "'I have left among you two things which, if you hold fast to them, you will never go astray: the Book of Allah and the Sunnah of His Prophet.' (Muwatta Malik, Ibn Majah). This is his final bequest to all of humanity — the twin anchors of guidance.",
   },
 ];
+
 export default dayTwentySevenQuestions;

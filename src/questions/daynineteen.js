@@ -1,156 +1,133 @@
-const dayNineteenQuestions = [
+ const dayNineteenQuestions = [
   {
-    question:
-      "Man actions are determined by him without Allah’s knowledge, this is the belief (Aqeedah) of ………………",
-    options: ["Jabariyah", "Qadriyah", "Qadariyah", "Mu’tazilah", "Khawarij"],
-    correctOption: 2,
-  },
-  {
-    question: "What is the full name of ‘Imam Mahdi’?",
+    category: "⚡ Prophet Lut AS",
+    question: "Prophet Lut AS was the nephew of which great prophet?",
     options: [
-      "Gulam",
-      "Muhammad bn ‘Abdullah",
-      "‘Abdullah bn Muhammad",
-      "Muhammad bn Muhammad",
-      "‘Abdullah bn ‘Abdullah",
+      "Prophet Nuh AS",
+      "Prophet Ibrahim AS",
+      "Prophet Ismail AS",
+      "Prophet Ishaq AS",
     ],
     correctOption: 1,
+    justification:
+      "Ibn Kathir establishes that Lut AS was a relative (nephew) of Ibrahim AS and accompanied him on his migration. He was then sent as a prophet to the people of Sodom. (Ibn Kathir – Stories of the Prophets, Prophet Lut chapter)",
   },
   {
-    question: "Which Angel is in charge of inspiration?",
+    category: "⚡ Prophet Lut AS",
+    question: "When the angels arrived as guests at Lut's home, why was Lut AS deeply distressed?",
     options: [
-      "Angel Israfil",
-      "Angel Israil",
-      "Angel Jibril",
-      "Angel Mikail",
-      "Angel Isma’i",
-    ],
-    correctOption: 2,
-  },
-  {
-    question:
-      "Which was the first sect to deviate from the belief of Ahlu Sunnah wal jama’ah during the life of the Caliphs?",
-    options: ["Jabariyah", "Qadriyah", "Qadariyah", "Mu’tazilah", "Khawarij"],
-    correctOption: 4,
-  },
-  {
-    question:
-      "What is the name of the sect that: - Introduced innovated facts, make it compulsory in the religion, call those who are against them Kafir (Disbliefers) and decreed that to kill them is allow. - Rejects leaders that rules in accordance with Quran. - The origin of rejecting Muslim Scholars is from them?",
-    options: ["Jabariyah", "Qadriyah", "Qadariyah", "Mu’tazilah", "Khawarij"],
-    correctOption: 4,
-  },
-  {
-    question: "Which chapter of the Quran is described as 'Mother of Quran'?",
-    options: [
-      "Suratu Yasin",
-      "Suratul Fatiah",
-      "Suratul Ikhlas",
-      "Suratul Mulk",
-      "Suratul Muhmineen",
+      "He had no food to offer them",
+      "He feared his wicked people would come to harm the guests",
+      "He did not recognise they were angels",
+      "He was afraid the king would take them prisoner",
     ],
     correctOption: 1,
+    justification:
+      "'And when Our messengers came to Lut, he was distressed for them and felt unable to protect them.' (Quran 11:77). Ibn Kathir explains Lut feared the evil intentions of his people, who were notorious for assaulting male guests.",
   },
   {
-    question: "Which chapter of the Quran mentioned the story of slanderer?",
+    category: "⚡ Prophet Lut AS",
+    question: "What did the angels reveal to Lut AS to give him reassurance regarding his guests?",
     options: [
-      "Suratun Nur",
-      "Suratul Hajj",
-      "Suratul Yusuph",
-      "Suratul Hud",
-      "Suratu Zumar",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "Which chapter of the Quran is described as 'heart of the Quran'?",
-    options: [
-      "Suratu Luqman",
-      "Suratu Yasin",
-      "Suratul Dhariyat",
-      "Suratul Hadid",
-      "Suratul Fatiah",
-    ],
-    correctOption: 1,
-  },
-  {
-    question:
-      "How many times was the name of Prophet Ayub (May the peace be upon him) mentioned in the Quran?",
-    options: [
-      "one time",
-      "two times",
-      "three times",
-      "four times",
-      "five times",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "The scripture revealed to Prophet Ibraheem (May the peace be upon him) was mentioned twice in the Quran, where are the two places?",
-    options: [
-      "Suratul A’la and Suratul Anbiyaa",
-      "Suratul Shams and Suratul Qiyama",
-      "Suratul A’la and Suratun Najm",
-      "Suratul A’la and Suratu Ibraheem",
-      "Suratus Shu’araa and Suratul Dukhan",
-    ],
-    correctOption: 0,
-  },
-  {
-    question:
-      "…………is the addition word found in the hadith narrated by a reliable reporter that was not included in the same hadith narrated by another reliable reporter.",
-    options: [
-      "Aothaq",
-      "Thiqah",
-      "Ziyadatul Aothaq",
-      "Ziyadatul Thiqah",
-      "Ziyadah",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "…………is the hadith that each reporter (starting from the Prophet Muhammad (May the peace and blessing of Allaah be upon him)) at each stage of Isnad is found reporting the hadith using the same mode of transmission, the same remark, or act in a particular manner while reporting it.",
-    options: [
-      "Al Mudabbaj",
-      "Riwayatul aqran",
-      "Al Musalsal",
-      "Al Ma’ruf",
-      "Al Mahfuz",
+      "That they were jinn in disguise",
+      "That they were sent by the king to protect him",
+      "That they were messengers of Allah and his people would not be able to harm them",
+      "That they had weapons of fire to protect themselves",
     ],
     correctOption: 2,
+    justification:
+      "The angels said: 'O Lut, we are messengers of your Lord. They will never reach you.' (Quran 11:81). Ibn Kathir explains the angels blinded the attackers when they tried to enter, and reassured Lut AS they were sent to destroy the wicked people.",
   },
   {
-    question:
-      "……...is the methodology of the expert scholars of hadith in assessing the narrations and sorting out the genuine from the weak and others.",
+    category: "⚡ Prophet Lut AS",
+    question: "How were the people of Lut AS ultimately destroyed?",
     options: [
-      "Science of Hadith",
-      "Study of narrator",
-      "History of hadith",
-      "Collection of hadith",
-      "Study of narration",
+      "A great flood like the time of Nuh AS",
+      "A volcanic eruption destroyed their city",
+      "Their city was turned upside down and stones of baked clay rained upon them",
+      "They were struck by lightning for seven days",
     ],
-    correctOption: 0,
+    correctOption: 2,
+    justification:
+      "'So when Our command came, We made the highest part of it (the city) its lowest and rained upon them stones of layered hard clay.' (Quran 11:82). Ibn Kathir describes this as one of the most severe punishments in the Quran.",
   },
   {
-    question:
-      "…………….is the book of hadith that the author arranged its hadiths in alphabetical order.",
+    category: "⚡ Prophet Lut AS",
+    question: "What happened to the wife of Lut AS even though she was told to flee?",
     options: [
-      "As Sunan",
-      "Al Jami’",
-      "Al Musnad",
-      "Al Mu’jamu",
-      "Al Mustadrak",
+      "She repented at the last moment and was saved",
+      "She was saved but lived in exile",
+      "She looked back against the command and was destroyed with the disbelievers",
+      "She ran ahead and was separated from Lut AS",
     ],
-    correctOption: 3,
+    correctOption: 2,
+    justification:
+      "The angels instructed Lut: 'Take your family by night and let not any among you look back — except your wife. Indeed, she will be struck by what strikes them.' (Quran 11:81). Ibn Kathir notes she was a traitor to Lut AS in belief.",
   },
   {
-    question:
-      "……………… is the book of hadith that the author arranged its hadiths in the ordering of the books of fiqh.",
-    options: ["As Sunan", "Al Jami’", "Al Musnad", "Al Mu’jam", "Al Mustadrak"],
-    correctOption: 0,
+    category: "⚡ Prophet Shu'ayb AS",
+    question: "Prophet Shu'ayb AS was sent to which people?",
+    options: [
+      "The people of 'Aad",
+      "The people of Thamud",
+      "The people of Madyan (Midian)",
+      "The people of Babel",
+    ],
+    correctOption: 2,
+    justification:
+      "'And to Madyan, We sent their brother Shu'ayb.' (Quran 7:85). Ibn Kathir records that the people of Madyan were traders who lived near the Red Sea and were notorious for dishonesty in commerce.",
+  },
+  {
+    category: "⚡ Prophet Shu'ayb AS",
+    question: "What were the main sins of the people of Madyan that Prophet Shu'ayb AS specifically called them to stop?",
+    options: [
+      "Worshipping the sun and moon",
+      "Cheating in weights and measures, and causing corruption in the land",
+      "Drinking wine and gambling",
+      "Building tall structures out of arrogance",
+    ],
+    correctOption: 1,
+    justification:
+      "Shu'ayb said: 'Give full measure and do not be of those who cause loss... and do not deprive people of their due and do not commit abuse on the earth, spreading corruption.' (Quran 26:181-183). Ibn Kathir highlights their crime of commercial fraud.",
+  },
+  {
+    category: "⚡ Prophet Shu'ayb AS",
+    question: "What noble title was given to Prophet Shu'ayb AS by scholars because of his powerful, eloquent speech?",
+    options: [
+      "Al-Ameen — The Trustworthy",
+      "Al-Khalil — The Friend",
+      "Khatib al-Anbiya — The Orator of the Prophets",
+      "As-Siddiq — The Truthful",
+    ],
+    correctOption: 2,
+    justification:
+      "Ibn Kathir records that scholars gave Shu'ayb AS the title 'Khatib al-Anbiya' (Orator of the Prophets) because of the extraordinarily eloquent and persuasive way he delivered his message and debated his people.",
+  },
+  {
+    category: "⚡ Prophet Shu'ayb AS",
+    question: "When the people of Madyan mocked Shu'ayb and his followers, saying prayer had made him foolish, how did he respond?",
+    options: [
+      "He warned them of the flood",
+      "He said: 'O my people, my family is more honourable to you than Allah? Do you take Him behind you neglected?'",
+      "He challenged them to a test of strength",
+      "He left them and sought help from another tribe",
+    ],
+    correctOption: 1,
+    justification:
+      "Shu'ayb said: 'O my people, has my family been more prestigious to you than Allah? And you have put Him behind you in neglect?' (Quran 11:92). Ibn Kathir explains he was shocked they valued tribal ties over obedience to Allah.",
+  },
+  {
+    category: "⚡ Prophet Shu'ayb AS",
+    question: "How were the people of Madyan ultimately destroyed after rejecting Shu'ayb AS?",
+    options: [
+      "A flood drowned their entire city",
+      "A violent earthquake combined with a thunderous blast destroyed them",
+      "Fire rained down from the sky upon them",
+      "Their crops failed for seven years until they perished",
+    ],
+    correctOption: 1,
+    justification:
+      "'And the mighty blast seized those who had wronged, and they became within their homes corpses fallen prone.' (Quran 11:94). Ibn Kathir also mentions they were preceded by intense heat (the 'scorching punishment'), then the blast finished them. (Quran 26:189)",
   },
 ];
-
 export default dayNineteenQuestions;

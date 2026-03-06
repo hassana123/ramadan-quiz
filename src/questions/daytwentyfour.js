@@ -1,146 +1,134 @@
-const dayTwentyFourQuestions = [
+ const dayTwentyFourQuestions = [
   {
-    question: "Which verse of the Quran is the longest?",
-    options: ["Q2:255", "Q2:282", "Q2:187", "Q4:12", "Q5:3"],
-    correctOption: 1,
-  },
-  {
-    question:
-      "Which ‘Surah’ (Chapter) of the Quran falls at the middle of Quran?",
+    category: "👑 Prophet Dawud AS",
+    question: "Before becoming a prophet and king, how did the young Dawud AS defeat the mighty giant Jalut (Goliath)?",
     options: [
-      "Suratul Yasin",
-      "Suratul Israil",
-      "Suratul Kahf",
-      "Surau Maryam",
-      "Sutau Taaha",
+      "He challenged him to a sword duel and won",
+      "He prayed and Jalut was struck by lightning",
+      "He used a sling to hurl a stone, which struck Jalut and killed him",
+      "He poisoned Jalut's water supply",
     ],
     correctOption: 2,
+    justification:
+      "'And Dawud killed Jalut, and Allah gave him kingship and wisdom and taught him what He willed.' (Quran 2:251). Ibn Kathir records that Dawud was a young shepherd who came forward when no soldier would — he struck Jalut with a sling, beginning his extraordinary rise.",
   },
   {
-    question: "How many chapters do we have in the Quran?",
-    options: ["6666", "313", "114", "60", "30"],
-    correctOption: 2,
-  },
-  {
-    question:
-      "Which Chapter of the Quran is it that Allaah mentioned Battle of Badr?",
+    category: "👑 Prophet Dawud AS",
+    question: "What was the miraculous gift Allah gave to Dawud AS regarding nature?",
     options: [
-      "Suratut Taobah",
-      "Suratul Baqarah",
-      "Suratul Anfal",
-      "Suratul Ahzab",
-      "Suratun Nisaa",
-    ],
-    correctOption: 0,
-  },
-  {
-    question: "On how many modes (or letters) was the Quran revealed?",
-    options: [
-      "one modes",
-      "two modes",
-      "three modes",
-      "five modes",
-      "seven modes",
-    ],
-    correctOption: 4,
-  },
-  {
-    question:
-      "Two chapters of Quran; one start with the last word of the second, what are their names?",
-    options: [
-      "Suratul Infitar and Suratul Nabai",
-      "Suratul Naml and Suratul Qari’ah",
-      "Suratul Qadr and Suratul Fajr",
-      "Suratul Kahf and Suratul Ikhlas",
-      "Suratul Muzammil and Suratul Rum",
-    ],
-    correctOption: 2,
-  },
-  {
-    question: "Which verse of the Quran highly comprises the name 'Allah'?",
-    options: ["Q2:255", "Q2:282", "Q2:187", "Q4:12", "Q5:3"],
-    correctOption: 0,
-  },
-  {
-    question:
-      "Who is the only woman whose real name was mentioned in the holy Quran?",
-    options: [
-      "‘Aisha bint Abubakr",
-      "Maryam bint ‘Imran",
-      "Fatimah bint Muhammad",
-      "‘Asiya bint Muzahim",
-      "Hannah bint Faqud",
+      "The wind obeyed him and carried him through the sky",
+      "The mountains and birds would glorify Allah together with him",
+      "Wild animals became tame and served him",
+      "He could control rain and rivers",
     ],
     correctOption: 1,
+    justification:
+      "'And We certainly gave Dawud from Us bounty. O mountains, repeat the praises of Allah with him, and the birds.' (Quran 34:10). Ibn Kathir describes how Dawud AS had the most beautiful voice of all creation — when he sang the praises of Allah, mountains echoed and birds gathered.",
   },
   {
-    question:
-      "Which Chapter of the Quran caused the conversion of Umar bn Khatab (May Allaah be pleased with him) to Islam?",
+    category: "👑 Prophet Dawud AS",
+    question: "Which holy book was revealed to Prophet Dawud AS?",
     options: [
-      "Suratul Yasin",
-      "Suratul Israil",
-      "Suratul Kahf",
-      "Suratul Maryam",
-      "Suratul Taaha",
+      "The Injeel (Gospel)",
+      "The Suhuf (Scrolls)",
+      "The Az-Zabur (Psalms)",
+      "The Torah",
     ],
-    correctOption: 4,
-  },
-  {
-    question: "What is longest word of the Quran?",
-    options: [
-      "Walyatalatof",
-      "yasaluunaka",
-      "fajama’naaum",
-      "Fa asqaynakumuuh",
-      "Fasayakfiikahumuuh",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "How many Chapters of the Quran started with the letter Tah Sin Min?",
-    options: ["1", "2", "3", "4", "5"],
-    correctOption: 1,
-  },
-  {
-    question: "Who was first to order the compilation of Quran?",
-    options: [
-      "Abubakr Sidiq",
-      "Umar bn Khattab",
-      "‘Uthman bn ‘Affan",
-      "Ali bn Abi Talib",
-      "‘Abdullahi bn Mas’ud",
-    ],
-    correctOption: 0,
-  },
-  {
-    question: "For how many years was the Quran revealed?",
-    options: ["63 years", "40 years", "23 years", "13 years", "10 years"],
     correctOption: 2,
+    justification:
+      "'And to Dawud We gave the Zabur (Psalms).' (Quran 4:163). Ibn Kathir explains the Zabur consisted of beautiful hymns and praises to Allah, and was recited in a melody so moving that all of creation fell silent to listen.",
   },
   {
-    question:
-      "Where was the first verses of the Quran revealed to the Prophet Muhammad (May the peace and blessing of Allaah be upon him)?",
+    category: "👑 Prophet Dawud AS",
+    question: "What unique craft did Allah teach Prophet Dawud AS with his own hands?",
     options: [
-      "In Ka’bah",
-      "at ‘Arafah",
-      "in the cave of Najwah",
-      "in the cave of Hirah",
-      "in the room of Khadijah",
-    ],
-    correctOption: 3,
-  },
-  {
-    question:
-      "What is the last Chapter of the Quran, according to its arrangement?",
-    options: [
-      "Suratul Fatiha",
-      "Suratun Nas",
-      "Suratul Ikhlas",
-      "Suratul Baqarah",
-      "Suratul Fatih",
+      "The art of weaving fine silk garments",
+      "The making of iron coats of mail (armour)",
+      "The sculpting of stone temples",
+      "The building of ships",
     ],
     correctOption: 1,
+    justification:
+      "'And We taught him the fashioning of coats of armor to protect you from your battle.' (Quran 21:80). Ibn Kathir notes that Dawud AS earned his living making armour with his own hands — even as a king — and never ate except from his own labour.",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "What extraordinary gifts did Allah give to Sulaiman AS that no one else in creation had been given?",
+    options: [
+      "The ability to fly and become invisible",
+      "Control over the wind, the jinn, and the ability to understand the language of animals",
+      "Immortality and the power to raise the dead",
+      "The ability to turn anything to gold",
+    ],
+    correctOption: 1,
+    justification:
+      "'And to Sulaiman We subjected the wind... and of the devils were those who dived for him and did other work.' (Quran 21:81-82). Sulaiman said: 'O people, we have been taught the language of birds.' (Quran 27:16). Ibn Kathir calls these gifts uniquely bestowed on Sulaiman AS.",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "Which small creature brought Sulaiman AS news of the Queen of Sheba and her people?",
+    options: [
+      "An eagle",
+      "An ant",
+      "The hoopoe bird (hudhud)",
+      "A white dove",
+    ],
+    correctOption: 2,
+    justification:
+      "'And he took attendance of the birds and said: Why do I not see the hoopoe (hudhud)?... But the hoopoe stayed not long and said: I have encompassed in knowledge that which you have not encompassed, and I have come to you from Saba with certain news.' (Quran 27:20-22).",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "What did Sulaiman AS write in his letter to Queen Bilqis of Sheba?",
+    options: [
+      "A demand for gold and tribute",
+      "The letter began with Bismillah ir-Rahman ir-Raheem and called her not to be arrogant but to come to him in submission",
+      "A proposal of marriage",
+      "A warning that his army would destroy Sheba",
+    ],
+    correctOption: 1,
+    justification:
+      "'Indeed, it is from Sulaiman, and it is: In the name of Allah, the Entirely Merciful, the Especially Merciful — do not be haughty with me but come to me in submission.' (Quran 27:30-31). Ibn Kathir notes this letter is one of the most remarkable in history — beginning with Bismillah.",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "When Sulaiman AS asked who could bring him the throne of Bilqis, who brought it before he could even blink?",
+    options: [
+      "A powerful jinn named Ifrit",
+      "The angel Jibreel AS",
+      "One who had knowledge from the Book (a scholar in Sulaiman's court)",
+      "The wind, which carried it instantly",
+    ],
+    correctOption: 2,
+    justification:
+      "'One who had knowledge of the Scripture said: I will bring it to you before your glance returns to you.' (Quran 27:40). Ibn Kathir identifies this as Asaf ibn Barkhiya, Sulaiman's companion who had been given special knowledge — a lesson that knowledge is mightier even than the power of jinn.",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "What lesson did Sulaiman AS learn when the jinn continued working after his death, and how did they discover he had died?",
+    options: [
+      "An angel told them Sulaiman had passed away",
+      "His crown fell to the ground",
+      "A termite/worm ate through his staff and his body fell — revealing he had died while leaning on it",
+      "His seal ring crumbled to dust",
+    ],
+    correctOption: 2,
+    justification:
+      "'When he fell, it became clear to the jinn that if they had known the unseen, they would not have remained in the humiliating punishment.' (Quran 34:14). Ibn Kathir explains that a wood-boring worm ate his staff as he leaned on it — the jinn had no knowledge of the unseen.",
+  },
+  {
+    category: "👑 Prophet Sulaiman AS",
+    question: "What dua did Sulaiman AS make that Allah recorded in the Quran — a unique request for a kingdom unlike anyone else?",
+    options: [
+      "He asked for wisdom to judge between all disputes",
+      "He asked for the ability to live forever to serve Allah",
+      "He asked: 'My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower.'",
+      "He asked to be given the strength of a thousand men",
+    ],
+    correctOption: 2,
+    justification:
+      "'He said: My Lord, forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower.' (Quran 38:35). Allah accepted this dua — the kingdom of Sulaiman was the greatest in all human history, never to be replicated.",
   },
 ];
+
 export default dayTwentyFourQuestions;
