@@ -1,5 +1,5 @@
 import React from "react";
-import IWDHero from "../components/IWDHero";
+import IWDHero from "../components/IwdHero";
 import Features from "../components/Features";
 import Hadiths from "../components/Hadiths";
 import TopFive from "../components/TopFive";
