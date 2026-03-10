@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "../components/Hero";
 import IWDHero from "../components/IwdHero";
 import Features from "../components/Features";
 import Hadiths from "../components/Hadiths";
@@ -11,7 +12,7 @@ import QuranTracker from "../components/Qurantracker";
 const Landing = () => {
   return (
     <main className="bg-whiteish font-custom2 relative">
-      <IWDHero />
+      <Hero />
       <QuranTracker />
       <DeedOfTheDay />
       <Features />
